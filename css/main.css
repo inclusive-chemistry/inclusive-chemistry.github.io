@@ -38,9 +38,7 @@ table, th, td {
   font-weight: bold;
   font-size: 2em
 }
-.left {
-  float: left;
-}
-.right {
-  float: right;
+li:first-child {
+  color: green;
+	content: 'working ';
 }

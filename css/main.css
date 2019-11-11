@@ -36,6 +36,8 @@ table, th, td {
   visibility: hidden;
 }
 button {
+  width: 100%;
   background-color: black;
   color: white;
+  boder: 1px solid black;
 }

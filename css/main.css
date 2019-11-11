@@ -37,7 +37,8 @@ button {
   boder: 1px solid black;
 }
 /* at stands for assistive technology screen-reader only */
-at {
-  font-size: 1px;
+.at {
+  width:1px;
+  height:1px;
 }
   

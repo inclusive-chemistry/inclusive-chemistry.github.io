@@ -29,19 +29,12 @@
   <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a> 
      <div style="height:200px;">&nbsp;</div>
      
-<div class="container">
- <div class="row">
-  <div class="col-md-12">
+   <div class="left100 bottom50">
    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
   </div>
- </div>
-</div>
-  
-  <div class="container">
-  <div class="row">
-   <div class="col-md-12">
 
-<table>
+
+<table class="left100">
   <thead>
     <tr>
       <th>Group IA</th>
@@ -66,7 +59,7 @@
   </thead>
   <tbody>
     <tr>
-       <td id="hydrogen" class="solids"><button type="button" class="btn btn-dark" name="hyrdrogen" taborder="1">H</button><ul><li data-number="1">1</li><li data-name="hydrogen">Hydrogen</li><li data-weight="hydrogen">1.008</li></ul></td>
+       <td id="hydrogen" class="solids" tabindex="1"><button type="button" class="btn btn-dark" name="hyrdrogen">H</button><span class="atomicnumber" data-atomicnumber="1">1</span><ul><li data-name="hydrogen">Hydrogen</li><li data-weight="hydrogen">1.008</li><li data-groundstate="hydrogen">1s</li></ul></td>
       <td>Row 1, Cell 2</td>
       <td>Row 1, Cell 3</td>
       <td>Row 1, Cell 4</td>
@@ -86,7 +79,7 @@
       <td>Row 1, Cell 18</td>
     </tr>
     <tr>
-       <td id="lithium" class="solids"><button type="button" name="lithium" taborder="2">Li</button><ul><li data-number="3">1</li><li data-symbol="Li" class="bold">Li</li><li data-name="lithium">Lithium</li><li data-weight="hydrogen">5.3917</li></ul></td>
+       <td id="lithium" class="solids" tabindex="2"><button type="button" class="btn btn-dark" name="lithium">Li</button><ul><li data-number="3">3</li><li data-symbol="Li" class="bold">Li</li><li data-name="lithium">Lithium</li><li data-weight="hydrogen">5.3917</li></ul></td>
       <td>Row 2, Cell 2</td>
       <td>Row 2, Cell 3</td>
       <td>Row 2, Cell 4</td>
@@ -248,25 +241,12 @@
   </tbody>
 </table>
 
-
-
-  
-   </div>
-   </div>
-  </div>
-  
-  <div class="container">
-   <div class="row">
-     <div class="col-md-12">
         <p tabindex="0">This page last modified or reviewed</p>
         <ul>
-           <li>content: 8 November 2019</li>
-           <li>Language changed from ko to en 8 November 2019</li>
+           <li>content: 11 November 2019</li>
+           <li>Removed Bootstrap 11 November 2019</li>
         </ul>
   
-   </div>
-   </div>
-  </div>
      
  <!-- js from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table -->    
  <script>
@@ -294,9 +274,7 @@ function searchElement() {
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     
+
  </body>   
 </html>
  

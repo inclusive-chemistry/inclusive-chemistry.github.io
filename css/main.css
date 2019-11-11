@@ -31,6 +31,7 @@ table, th, td {
   margin-right: 10px;
   font-weight: bold;
 }
+/* use hidden versus diplay none to keep layout */
 .hidden {
   visibility: hidden;
 }

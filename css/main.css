@@ -17,6 +17,9 @@ ul {
   list-style: none;
   padding-right: 10px;
 }
+table {
+  padding-left: 100px;
+}
 table, th, td {
   border: 1px solid black;
 }

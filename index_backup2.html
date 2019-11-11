@@ -21,7 +21,6 @@
 <head>
   <title>Inclusive Chemistry</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="css/main.css">
  </head>
 
@@ -33,8 +32,8 @@
    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
   </div>
 
-
-<table class="left100">
+<div class="left100">
+<table>
   <thead>
     <tr>
       <th>Group IA</th>
@@ -59,27 +58,27 @@
   </thead>
   <tbody>
     <tr>
-       <td id="hydrogen" class="solids" tabindex="1"><button type="button" class="btn btn-dark" name="hyrdrogen">H</button><span class="atomicnumber" data-atomicnumber="1">1</span><ul><li data-name="hydrogen">Hydrogen</li><li data-weight="hydrogen">1.008</li><li data-groundstate="hydrogen">1s</li></ul></td>
-      <td>Row 1, Cell 2</td>
-      <td>Row 1, Cell 3</td>
-      <td>Row 1, Cell 4</td>
-      <td>Row 1, Cell 5</td>
-      <td>Row 1, Cell 6</td>
-      <td>Row 1, Cell 7</td>
-      <td>Row 1, Cell 8</td>
-      <td>Row 1, Cell 9</td>
-      <td>Row 1, Cell 10</td>
-      <td>Row 1, Cell 11</td>
-      <td>Row 1, Cell 12</td>
-      <td>Row 1, Cell 13</td>
-      <td>Row 1, Cell 14</td>
-      <td>Row 1, Cell 15</td>
-      <td>Row 1, Cell 16</td>
-      <td>Row 1, Cell 17</td>
-      <td>Row 1, Cell 18</td>
+       <td id="hydrogen" class="solids"><button type="button" class="btn btn-dark" name="hyrdrogen">H</button><span class="atomicnumber" data-atomicnumber="1">1</span><ul><li data-name="hydrogen">Hydrogen</li><li data-weight="hydrogen">1.008</li><li data-groundstate="hydrogen">1s</li><li data-ev="hydrogen">13.5984</li></ul></td>
+      <td class="hidden">Row 1, Cell 2</td>
+      <td class="hidden">Row 1, Cell 3</td>
+      <td class="hidden">Row 1, Cell 4</td>
+      <td class="hidden">Row 1, Cell 5</td>
+      <td class="hidden">Row 1, Cell 6</td>
+      <td class="hidden">Row 1, Cell 7</td>
+      <td class="hidden">Row 1, Cell 8</td>
+      <td class="hidden">Row 1, Cell 9</td>
+      <td class="hidden">Row 1, Cell 10</td>
+      <td class="hidden">Row 1, Cell 11</td>
+      <td class="hidden">Row 1, Cell 12</td>
+      <td class="hidden">Row 1, Cell 13</td>
+      <td class="hidden">Row 1, Cell 14</td>
+      <td class="hidden">Row 1, Cell 15</td>
+      <td class="hidden">Row 1, Cell 16</td>
+      <td class="hidden">Row 1, Cell 17</td>
+         <td id="helium" class="gases"><button type="button" name="helium">He</button><span class="atomicnumber" data-atomicnumber="2">1</span><ul><li data-name="helium">Helium</li><li data-weight="helium">4.028</li><li data-groundstate="helium">1s^2</li><li data-ev="helium">24.5874</li></ul></td>
     </tr>
     <tr>
-       <td id="lithium" class="solids" tabindex="2"><button type="button" class="btn btn-dark" name="lithium">Li</button><ul><li data-number="3">3</li><li data-symbol="Li" class="bold">Li</li><li data-name="lithium">Lithium</li><li data-weight="hydrogen">5.3917</li></ul></td>
+       <td id="lithium" class="solids"><button type="button" class="btn btn-dark" name="lithium">Li</button><span class="atomicnumber" data-atomicnumber="3">3</span><ul><li data-name="lithium">Lithium</li><li data-weight="lithium">1.008</li><li data-groundstate="lithium">1s^2 2s</li><li data-ev="lithium">5.3917</li></ul></td>
       <td>Row 2, Cell 2</td>
       <td>Row 2, Cell 3</td>
       <td>Row 2, Cell 4</td>
@@ -240,13 +239,15 @@
     </tr>
   </tbody>
 </table>
-
-        <p tabindex="0">This page last modified or reviewed</p>
-        <ul>
-           <li>content: 11 November 2019</li>
-           <li>Removed Bootstrap 11 November 2019</li>
-        </ul>
-  
+     </div>
+  <div  class="left100">
+     <p tabindex="0">This page last modified or reviewed</p>
+     <ul>
+        <li>content: 11 November 2019</li>
+        <li>Removed Bootstrap 11 November 2019</li>
+        <li>No tabinidex used</li>
+     </ul>
+  </div>
      
  <!-- js from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table -->    
  <script>

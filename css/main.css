@@ -15,7 +15,7 @@ background-color: #98FB98;
 }
 ul {
   list-style: none;
-  padding-right: 10px;
+  padding-right: 12px;
 }
 table, th, td {
   border: 1px solid black;
@@ -34,4 +34,8 @@ table, th, td {
 /* use hidden versus diplay none to keep layout */
 .hidden {
   visibility: hidden;
+}
+button {
+  background-color: black;
+  color: white;
 }

@@ -38,6 +38,5 @@ button {
 }
 /* at stands for assistive technology screen-reader only */
 .at {
-  width:1px;
-  height:1px;
+  font-size: 1px;
 }

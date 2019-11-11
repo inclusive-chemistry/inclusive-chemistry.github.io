@@ -15,7 +15,7 @@ background-color: #98FB98;
 }
 ul {
   list-style: none;
-  margin-left: -20px;
+  margin-left: -25px;
 }
 table, th, td {
   border: 1px solid black;
@@ -38,9 +38,11 @@ table, th, td {
   font-weight: bold;
   font-size: 2em
 }
-.left {
-  float: left;
+li:first-child::before {
+  color: green;
+  content: 'working ';
 }
-.right {
-  float: right;
+li:nth-child(2)::before {
+  color: red;
+  content: 'also working ';
 }

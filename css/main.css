@@ -42,3 +42,7 @@ li:first-child::before {
   color: green;
   content: 'working ';
 }
+li:nth-child(2)::before {
+  color: red;
+  content: 'also working ';
+}

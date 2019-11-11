@@ -25,14 +25,15 @@
  </head>
 
   <body>
-  <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a> 
+  <a class="at" href="#main">Skip to main content</a> 
      <div style="height:200px;">&nbsp;</div>
      
    <div class="left100 bottom50">
-   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+      <label for="nameInput">Search Names</label>
+   <input type="text" id="nameInput" onkeyup="myFunction()" placeholder="Search for names..">
   </div>
 
-<div class="left100">
+<div class="left100" id="main">
 <table>
   <thead>
     <tr>
@@ -58,7 +59,15 @@
   </thead>
   <tbody>
     <tr>
-       <td id="hydrogen" class="solids"><button type="button"  name="hyrdrogen">H</button><span class="atomicnumber" data-atomicnumber="1">1</span><ul><li data-name="hydrogen">Hydrogen</li><li data-weight="hydrogen">1.008</li><li data-groundstate="hydrogen">1s</li><li data-ev="hydrogen">13.5984</li></ul></td>
+       <td id="hydrogen" class="solids"><button type="button" name="hyrdrogen">Hydrogen</button>
+          <ul>
+             <li data-symbol="h"><span class="at">Atomic Symbol</span>H</li>
+             <li data-atomicnumber="1"><span class="at">Atomic number</span>1</li>
+             <li data-weight="hydrogen"><span class="at">Atomic weight</span>1.008</li>
+             <li data-ev="hydrogen"><span class="at">Ionization energy</span>13.5984</li>
+             <li data-groundstate="hydrogen"><span class="at">Ground state configuration</span>1 s</li>  
+          </ul>
+       </td>
       <td class="hidden">Row 1, Cell 2</td>
       <td class="hidden">Row 1, Cell 3</td>
       <td class="hidden">Row 1, Cell 4</td>
@@ -75,10 +84,20 @@
       <td class="hidden">Row 1, Cell 15</td>
       <td class="hidden">Row 1, Cell 16</td>
       <td class="hidden">Row 1, Cell 17</td>
-         <td id="helium" class="gases"><button type="button" name="helium">He</button><span class="atomicnumber" data-atomicnumber="2">2</span><ul><li data-name="helium">Helium</li><li data-weight="helium">4.028</li><li data-groundstate="helium">1s^2</li><li data-ev="helium">24.5874</li></ul></td>
+      <td id="helium" class="gases">
+         <button type="button" name="helium">Helium</button>
+           <ul>
+             <li data-symbol="He"><span class="at">Atomic Symbol</span>H e</li>
+             <li data-atomicnumber="2"><span class="at">Atomic number</span>2</li>
+             <li data-weight="helium"><span class="at">Atomic weight</span>4.0026</li>
+             <li data-ev="helium"><span class="at">Ionization energy</span>24.5874</li>
+             <li data-groundstate="hydrogen"><span class="at">Ground state configuration</span>1 s ^</li>  
+          </ul>
+       
+       </td>
     </tr>
     <tr>
-       <td id="lithium" class="solids"><button type="button"  name="lithium">Li</button><span class="atomicnumber" data-atomicnumber="3">3</span><ul><li data-name="lithium">Lithium</li><li data-weight="lithium">1.008</li><li data-groundstate="lithium">1s^2 2s</li><li data-ev="lithium">5.3917</li></ul></td>
+       <td id="lithium" class="solids"><button type="button" name="lithium">Lithium</button><ul><li data-name="lithium">Lithium</li><li data-weight="lithium">1.008</li><li data-groundstate="lithium">1s^2 2s</li><li data-ev="lithium">5.3917</li></ul><span class="atomicnumber" data-atomicnumber="3">3</span></td>
       <td>Row 2, Cell 2</td>
       <td>Row 2, Cell 3</td>
       <td>Row 2, Cell 4</td>

@@ -15,6 +15,7 @@ background-color: #98FB98;
 }
 ul {
   list-style: none;
+  padding-right: 10px;
 }
 table, th, td {
   border: 1px solid black;

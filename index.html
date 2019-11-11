@@ -25,14 +25,15 @@
  </head>
 
   <body>
-  <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a> 
+  <a class="at" href="#main">Skip to main content</a> 
      <div style="height:200px;">&nbsp;</div>
      
    <div class="left100 bottom50">
-   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+      <label for="nameInput">Search Names</label>
+   <input type="text" id="nameInput" onkeyup="myFunction()" placeholder="Search for names..">
   </div>
 
-<div class="left100">
+<div class="left100" id="main">
 <table>
   <thead>
     <tr>
@@ -58,7 +59,15 @@
   </thead>
   <tbody>
     <tr>
-       <td id="hydrogen" class="solids"><button type="button" name="hyrdrogen">Hydrogen</button><ul><li data-name="hydrogen">Hydrogen</li><li data-weight="hydrogen">1.008</li><li data-groundstate="hydrogen">1s</li><li data-ev="hydrogen">13.5984</li></ul><span class="atomicnumber" data-atomicnumber="1">1</span></td>
+       <td id="hydrogen" class="solids"><button type="button" name="hyrdrogen">Hydrogen</button>
+          <ul>
+             <li data-symbol="h"><span class="at">Atomic symbol</span>H</li>
+             <li data-atomicnumber="1"><span class="at">Atomic number</span>1</li>
+             <li data-weight="hydrogen"><span class="at">Atomic weight</span>1.008</li>
+             <li data-ev="hydrogen"><span class="at">Ionization energy</span>13.5984</li>
+             <li data-groundstate="hydrogen">1 s</li>  
+          </ul>
+       </td>
       <td class="hidden">Row 1, Cell 2</td>
       <td class="hidden">Row 1, Cell 3</td>
       <td class="hidden">Row 1, Cell 4</td>

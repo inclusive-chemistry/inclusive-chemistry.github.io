@@ -26,11 +26,6 @@ table, th, td {
 .bottom50 {
   margin-bottom: 50px;
 }
-.atomicnumber {
-  float: right;
-  margin-right: 10px;
-  font-weight: bold;
-}
 /* use hidden versus diplay none to keep layout */
 .hidden {
   visibility: hidden;
@@ -41,3 +36,8 @@ button {
   color: white;
   boder: 1px solid black;
 }
+/* at stands for assistive technology screen-reader only */
+at {
+  font-size: 1px;
+}
+  

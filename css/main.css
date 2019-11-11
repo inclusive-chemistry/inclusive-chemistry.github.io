@@ -38,7 +38,7 @@ table, th, td {
   font-weight: bold;
   font-size: 2em
 }
-li:first-child {
+li:first-child::before {
   color: green;
-	content: 'working ';
+  content: 'working ';
 }

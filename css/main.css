@@ -15,7 +15,7 @@ background-color: #98FB98;
 }
 ul {
   list-style: none;
-  margin-left: -10px;
+  margin-left: -20px;
 }
 table, th, td {
   border: 1px solid black;
@@ -37,4 +37,10 @@ table, th, td {
 .bigfont2 {
   font-weight: bold;
   font-size: 2em
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }

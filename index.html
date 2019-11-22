@@ -45,14 +45,14 @@
            <p tabindex="0">Tab</p>
          </div>
      
-   <input id='myInput' onkeyup='searchTable()' type='text'>
+   <input id='search_field_input' onkeyup='search_table()' type='text'>
   
 <div class="left100 bottom50">
  <label for="indexinput">Search Elements (Alphabetical Search):</label>
  <input type="text" id="indexinput" name="indexinput" onkeyup="searchElementFunction()"  title="ElementSearch"> 
 </div>
 <div class="left100">
-<table id="indexTable">
+<table id="table_id">
   <thead>
     <tr>
       <th>Group IA</th>
@@ -293,26 +293,30 @@
      </ul>
   </div>
 <script>
-function searchTable() {
-    var input, filter, found, table, tr, td, i, j;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td");
-        for (j = 0; j < td.length; j++) {
-            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
-                found = true;
-            }
-        }
-        if (found) {
-            tr[i].style.display = "";
-            found = false;
+function search_table(){
+  // Declare variables 
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("search_field_input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("table_id");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td") ; 
+    for(j=0 ; j<td.length ; j++)
+    {
+      let tdata = td[j] ;
+      if (tdata) {
+        if (tdata.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          break ; 
         } else {
-            tr[i].style.display = "none";
+          tr[i].style.display = "none";
         }
+      } 
     }
+  }
 }
 </script> 
  <!-- Optional JavaScript -->

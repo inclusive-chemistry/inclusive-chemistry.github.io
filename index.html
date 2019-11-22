@@ -39,12 +39,11 @@
  </head>
 
   <body>
-     <div class="left100 bottom50">
-     <h1>Searchable Periodic Table</h1>
-      <p tabindex="0">The elements are set up in a table, one element per cell. Each table cell contains the name of the element, and a list of five items containing the atomic number, the atomic symbol, the atomic weight, the ground state configuration, and the ionization energy.</p>
-           <p tabindex="0">Tab</p>
-         </div>
-     
+ <div class="containerDiv">
+   <input type='text' onkeyup="onChange();"/>
+   <div id="nameContainer"></div>
+</div>
+    
      
 <div class="left100 bottom50">
       <label for="indexinput">Search Elements (Alphabetical Search):</label>

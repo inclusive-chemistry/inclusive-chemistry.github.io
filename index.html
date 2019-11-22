@@ -327,7 +327,19 @@ function searchElementFunction() {
     }       
   }
 }
+const office = ['Helium','Hydrogen','Lithium']
 
+onKeyUp = () => {
+    var str = event.target.value.toLowerCase()
+    var filteredArr = office.filter((x)=>{
+        return x.toLowerCase().includes(str)){
+    })
+    if (arr.length > 0){
+        appendNodes(arr)
+    } else {
+        appendNodes("no results")
+    }
+}
 </script>
      
  <!-- Optional JavaScript -->

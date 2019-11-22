@@ -292,7 +292,7 @@
   <div  class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
      <ul>
-        <li>content: 11 November 2019</li>
+        <li>content: 23 November 2019</li>
         <li>Removed Bootstrap 11 November 2019</li>
         <li>No tabinidex used</li>
      </ul>
@@ -306,7 +306,7 @@ function searchElementFunction() {
   table = document.getElementById("indexTable");
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
+    td = tr[i].getElementsByTagName("td")[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
     if (td) {
       txtValue = td.textContent || td.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {

@@ -45,19 +45,14 @@
            <p tabindex="0">Tab</p>
          </div>
      
-     
+   
+  
 <div class="left100 bottom50">
-      <label for="indexinput">Search Elements (Alphabetical Search):</label>
-      <input type="text" id="indexinput" name="indexinput" onkeyup="searchElementFunction()"  title="ElementSearch"> 
-       </div>
-      <div class="left100 bottom50">
-      <label for="index2input">Search Notes:</label>
-      <input type="text" id="index2input" name="index2input" onkeyup="searchNotesFunction()"  title="Notes Search">
-  </div>
-      
-
+ <label for="search_field_input">Search Elements (Alphabetical Search):</label>
+ <input id="search_field_input" onkeyup="search_table()" type="text">
+</div>
 <div class="left100">
-<table id="indexTable">
+<table id="table_id">
   <thead>
     <tr>
       <th>Group IA</th>
@@ -297,51 +292,36 @@
         <li>No tabinidex used</li>
      </ul>
   </div>
- <!-- source code courtesy W3C schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table -->
- <script>
-function searchElementFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("indexinput");
+  <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
+<script>
+function search_table(){
+  // Declare variables 
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("search_field_input");
   filter = input.value.toUpperCase();
-  table = document.getElementById("indexTable");
+  table = document.getElementById("table_id");
   tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
+    td = tr[i].getElementsByTagName("td") ; 
+    for(j=0 ; j<td.length ; j++)
+    {
+      let tdata = td[j] ;
+      if (tdata) {
+        if (tdata.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          break ; 
+        } else {
+          tr[i].style.display = "none";
+        }
+      } 
+    }
   }
 }
-	 	 
-	 
-function searchNotesFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("index2input");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("indexTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
-</script>
-     
+</script> 
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
  </body>   
 </html>

@@ -22,22 +22,47 @@
   <title>Inclusive Chemistry</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="css/main.css">
+   <style>
+* {
+  box-sizing: border-box;
+}
+#indexTable th {
+  font-weight: bold;
+  background-color:#8B0000;
+  color: white;
+}
+#indexTable th, #indexTable td {
+  font-weight: bold;
+    border-style: transparent;	
+}	
+</style>
  </head>
 
   <body>
-  <a class="at" href="#main">Skip to main content</a> 
-        <div class="left100 bottom50">
-           <p tabindex="0">The elements are set up in a table, one element per cell. Each table cell contains the name of the element, and a list of five items containing the atomic number, the atomic symbol, the atomic weight, the ground state configuration, and the ionization energy.</p>
+     <div class="left100 bottom50">
+     <h1>Searchable Periodic Table</h1>
+      <p tabindex="0">The elements are set up in a table, one element per cell. Each table cell contains the name of the element, and a list of five items containing the atomic number, the atomic symbol, the atomic weight, the ground state configuration, and the ionization energy.</p>
            <p tabindex="0">Tab</p>
          </div>
      
    <div class="left100 bottom50">
-      <label for="nameInput">Search Names</label>
-   <input type="text" id="nameInput" onkeyup="myFunction()" placeholder="Search for names..">
+      <label for="elementNameInput">Search Element Names</label>
+        <input type="text" id="elementNameInput" onkeyup="elementNameSearch()" placeholder="Search for element names..">
+   </div>
+     
+     
+<div class="left100 bottom50">
+      <label for="indexinput">Search Departments:</label>
+      <input type="text" id="indexinput" name="indexinput" onkeyup="searchDepartmentFunction()"  title="Department Search"> 
+       </div>
+      <div class="left100 bottom50">
+      <label for="index2input">Search Notes:</label>
+      <input type="text" id="index2input" name="index2input" onkeyup="searchNotesFunction()"  title="Notes Search">
   </div>
+      
 
-<div class="left100" id="main">
-<table>
+<div class="left100">
+<table id="indexTable">
   <thead>
     <tr>
       <th>Group IA</th>
@@ -277,14 +302,13 @@
         <li>No tabinidex used</li>
      </ul>
   </div>
-     
- <!-- js from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table -->    
+ <!-- source code courtesy W3C schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table -->
  <script>
-function searchElement() {
+function searchDepartmentFunction() {
   var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
+  input = document.getElementById("indexinput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
+  table = document.getElementById("indexTable");
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[0];
@@ -298,8 +322,27 @@ function searchElement() {
     }       
   }
 }
+	 	 
+	 
+function searchNotesFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("index2input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("indexTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
 </script>
- <!--  end js from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table --> 
      
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->

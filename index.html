@@ -50,10 +50,6 @@
       <label for="indexinput">Search Elements (Alphabetical Search):</label>
       <input type="text" id="indexinput" name="indexinput" onkeyup="searchElementFunction()"  title="ElementSearch"> 
        </div>
-      <div class="left100 bottom50">
-      <label for="index2input">Search Notes:</label>
-      <input type="text" id="index2input" name="index2input" onkeyup="searchNotesFunction()"  title="Notes Search">
-  </div>
 
 <div class="left100">
 <table id="indexTable">
@@ -318,26 +314,7 @@ function searchElementFunction() {
     }       
   }
 }
-	 	 
-	 
-function searchNotesFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("index2input");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("indexTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
+
 </script>
      
  <!-- Optional JavaScript -->

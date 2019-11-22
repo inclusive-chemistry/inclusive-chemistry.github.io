@@ -34,30 +34,11 @@
 #indexTable th, #indexTable td {
   font-weight: bold;
     border-style: transparent;	
-}	
- /* second css for table search */     
-.containerDiv{
-    display: block; 
-    margin: auto; 
-    width: 300px;
-}
-#nameContainer > p {
-    display: inline-block;
-    margin: 20px;
-}
-input{
-   width: 200px;
-   font-size: 20px;
-}      
+}	   
 </style>
  </head>
-
   <body>
- <div class="containerDiv">
-   <input type='text' onkeyup="onChange();"/>
-   <div id="nameContainer"></div>
-</div>
-    
+  <main>
      
 <div class="left100 bottom50">
       <label for="indexinput">Search Elements (Alphabetical Search):</label>
@@ -314,7 +295,7 @@ function searchElementFunction() {
   input = document.getElementById("indexinput");
   filter = input.value.toUpperCase();
   table = document.getElementById("indexTable");
-  tr = table.getElementsByTagName("tr");
+  tr = table.getElementsByTagName("tr")[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
     if (td) {
@@ -327,19 +308,7 @@ function searchElementFunction() {
     }       
   }
 }
-const office = ['Helium','Hydrogen','Lithium']
 
-onKeyUp = () => {
-    var str = event.target.value.toLowerCase()
-    var filteredArr = office.filter((x)=>{
-        return x.toLowerCase().includes(str)){
-    })
-    if (arr.length > 0){
-        appendNodes(arr)
-    } else {
-        appendNodes("no results")
-    }
-}
 </script>
      
  <!-- Optional JavaScript -->

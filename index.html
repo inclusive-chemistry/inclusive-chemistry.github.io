@@ -45,7 +45,8 @@
            <p tabindex="0">Tab</p>
          </div>
      
-     
+   <input id='myInput' onkeyup='searchTable()' type='text'>
+  
 <div class="left100 bottom50">
  <label for="indexinput">Search Elements (Alphabetical Search):</label>
  <input type="text" id="indexinput" name="indexinput" onkeyup="searchElementFunction()"  title="ElementSearch"> 
@@ -291,39 +292,28 @@
         <li>No tabinidex used</li>
      </ul>
   </div>
- <!-- source code courtesy W3C schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table -->
 <script>
-function searchElementFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("indexinput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("indexTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
- for (i = 0; i < tr.length; i++) {
- td = tr[i].getElementsByTagName("td")[1];
- if (td) {
-   txtValue = td.textContent || td.innerText;
-   if (txtValue.toUpperCase().indexOf(filter) > -1) {
-     tr[i].style.display = "";
-   } else {
-     tr[i].style.display = "none";
-   }
- }       
-} 
-   
+function searchTable() {
+    var input, filter, found, table, tr, td, i, j;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+            }
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+        } else {
+            tr[i].style.display = "none";
+        }
+    }
 }
-
 </script>
      
  <!-- Optional JavaScript -->

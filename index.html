@@ -45,15 +45,10 @@
            <p tabindex="0">Tab</p>
          </div>
      
-   <div class="left100 bottom50">
-      <label for="elementNameInput">Search Element Names</label>
-        <input type="text" id="elementNameInput" onkeyup="elementNameSearch()" placeholder="Search for element names..">
-   </div>
-     
      
 <div class="left100 bottom50">
-      <label for="indexinput">Search Departments:</label>
-      <input type="text" id="indexinput" name="indexinput" onkeyup="searchDepartmentFunction()"  title="Department Search"> 
+      <label for="indexinput">Search Elements:</label>
+      <input type="text" id="indexinput" name="indexinput" onkeyup="searchElementFunction()"  title="ElementSearch"> 
        </div>
       <div class="left100 bottom50">
       <label for="index2input">Search Notes:</label>
@@ -114,7 +109,7 @@
       <td class="hidden">Row 1, Cell 17</td>
       <td id="helium" class="gases" tabindex="0">Helium
            <ul>
-             <li data-symbol="He">H e</li>
+             <li data-symbol="He">He</li>
              <li data-atomicnumber="2">2</li>
              <li data-weight="helium">4.0026</li>
              <li data-ev="helium">24.5874</li>
@@ -304,7 +299,7 @@
   </div>
  <!-- source code courtesy W3C schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table -->
  <script>
-function searchDepartmentFunction() {
+function searchElementFunction() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("indexinput");
   filter = input.value.toUpperCase();

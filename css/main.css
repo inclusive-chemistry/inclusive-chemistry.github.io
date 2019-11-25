@@ -24,6 +24,9 @@ ul {
 table, th, td {
   border: 1px solid black;
 }
+td {
+  width: 59px;
+}
 .left100 {
   margin-left:100px;
 }

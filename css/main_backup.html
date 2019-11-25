@@ -41,10 +41,16 @@ table, th, td {
   font-weight: bold;
   font-size: 2em
 }
+/* em-tight still has space between the two letters */
+.letter-tight{ 
+  margin-left: -0.05em; 
+}
 .em-tight { 
   letter-spacing: -0.05em; 
 }
-
+td {
+  width: 50px;
+}
 li:first-child::before {
   color: green;
   /* screen reader does not read this is display content: 'working '; */

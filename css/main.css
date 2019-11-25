@@ -41,6 +41,10 @@ table, th, td {
   font-weight: bold;
   font-size: 2em
 }
+.em-tight { 
+  letter-spacing: -0.05em; 
+}
+
 li:first-child::before {
   color: green;
   /* screen reader does not read this is display content: 'working '; */

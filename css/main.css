@@ -49,9 +49,6 @@ table, th, td {
 .em-tight { 
   letter-spacing: -0.05em; 
 }
-td {
-  width: 70px;
-}
 li:first-child::before {
   color: green;
   /* screen reader does not read this is display content: 'working '; */

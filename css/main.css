@@ -18,6 +18,7 @@ background-color: #98FB98;
 }
 ul {
   list-style: none;
+  margin-left: -40px;
 }
 table, th, td {
   border: 1px solid black;

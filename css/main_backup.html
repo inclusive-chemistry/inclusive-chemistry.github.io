@@ -1,3 +1,6 @@
+body{
+  font-family: Arial;
+}
 .solids {
 background-color: #FFFACD;
 }
@@ -38,11 +41,15 @@ table, th, td {
   font-weight: bold;
   font-size: 2em
 }
+.em-tight { 
+  letter-spacing: -0.05em; 
+}
+
 li:first-child::before {
   color: green;
-  content: 'working ';
+  /* screen reader does not read this is display content: 'working '; */
 }
 li:nth-child(2)::before {
   color: red;
-  content: 'also working ';
+  /* content: 'also working ';*/
 }

@@ -47,7 +47,10 @@ table, th, td {
 }
 .em-tight { 
   letter-spacing: -0.05em; 
-}v
+}
+td {
+  width: 50px;
+}
 li:first-child::before {
   color: green;
   /* screen reader does not read this is display content: 'working '; */

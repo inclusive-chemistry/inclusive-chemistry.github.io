@@ -40,6 +40,7 @@
  </head>
 
  <body>
+ <main>
 <div class="left100 bottom50">
 <h1>Searchable Periodic Table</h1>
 <p tabindex="0">The elements are set up in a table, one element per cell. Each table cell contains the name of the element, and a list of five items containing the atomic number, the atomic symbol, the atomic weight, the ground state configuration, and the ionization energy.</p>
@@ -483,7 +484,7 @@
        </td>
     </tr>
     <tr>
-         <td id="rubidium" class="solids" tabindex="0">
+        <td id="rubidium" class="solids" tabindex="0">
             <ul>
              <li data-atomicnumber="37"><span class="bigfont1" aria-label="atomic number 37">37</span></li>
              <li data-symbol="rb" aria-label="atomic symbol R b " class="bigfont2">R<span class="letter-tight">b</span></li>
@@ -493,7 +494,16 @@
              <li data-ev="4.1771"><span class="bigfont1" aria-label="ionization energy 4 . 1 7 7 1">4.1771</span></li> 
           </ul>
        </td>
-      <td>Row 5, Cell 2</td>
+         <td id="strontium" class="solids" tabindex="0">
+            <ul>
+             <li data-atomicnumber="38"><span class="bigfont1" aria-label="atomic number 38">38</span></li>
+             <li data-symbol="sr" aria-label="atomic symbol S r " class="bigfont2">S<span class="letter-tight">r</span></li>
+             <li data-element="strontium"><span class="bigfont1" aria-label="element">Strontium</span></li>
+             <li data-weight="87.62"><span class="bigfont1" aria-label="standard atomic weight 87 . 6 2 8">87.62</span></li>
+             <li data-groundstate="strontium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-ev="5.6949"><span class="bigfont1" aria-label="ionization energy 5 . 6 9 4 9">5.6949</span></li> 
+          </ul>
+       </td>
       <td>Row 5, Cell 3</td>
       <td>Row 5, Cell 4</td>
       <td>Row 5, Cell 5</td>
@@ -594,12 +604,17 @@
   </tbody>
 </table>
      </div>
+    </main>
+    <footer>
   <div  class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
      <ul>
         <li>content: 2 December 2019</li>
+        <li>WebAim: 2 December 2019 0</li>
+        <li>NuHTML: 2 December 2019 aria-label warnings</li>
      </ul>
   </div>
+    </footer>
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
 <script>
 function search_table(){

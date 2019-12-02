@@ -40,6 +40,7 @@
  </head>
 
  <body>
+ <main>
 <div class="left100 bottom50">
 <h1>Searchable Periodic Table</h1>
 <p tabindex="0">The elements are set up in a table, one element per cell. Each table cell contains the name of the element, and a list of five items containing the atomic number, the atomic symbol, the atomic weight, the ground state configuration, and the ionization energy.</p>
@@ -503,8 +504,36 @@
              <li data-ev="5.6949"><span class="bigfont1" aria-label="ionization energy 5 . 6 9 4 9">5.6949</span></li> 
           </ul>
        </td>
-      <td>Row 5, Cell 3</td>
-      <td>Row 5, Cell 4</td>
+       <td id="yttrium" class="solids" tabindex="0">
+            <ul>
+             <li data-atomicnumber="39"><span class="bigfont1" aria-label="atomic number 39">39</span></li>
+             <li data-symbol="y" aria-label="atomic symbol Y " class="bigfont2">Y<span class="letter-tight">&nbsp;</span></li>
+             <li data-element="yttrium"><span class="bigfont1" aria-label="element">Yttrium</span></li>
+             <li data-weight="88.906"><span class="bigfont1" aria-label="standard atomic weight 88 . 9 0 6">88.906</span></li>
+             <li data-groundstate="yttrium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-ev="6.2173"><span class="bigfont1" aria-label="ionization energy 6 . 2 1 7 3">6.2173</span></li> 
+          </ul>
+       </td>
+        <td id="zirconium" class="solids" tabindex="0">
+            <ul>
+             <li data-atomicnumber="40"><span class="bigfont1" aria-label="atomic number 40">40</span></li>
+             <li data-symbol="zr" aria-label="atomic symbol Z r " class="bigfont2">Z<span class="letter-tight">r</span></li>
+             <li data-element="zirconium"><span class="bigfont1" aria-label="element">Zirconium</span></li>
+             <li data-weight="91.224"><span class="bigfont1" aria-label="standard atomic weight 91 . 2 2 4">91.224</span></li>
+             <li data-groundstate="zirconium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-ev="6.6341"><span class="bigfont1" aria-label="ionization energy 6 . 6 3 4 1">6.6341</span></li> 
+          </ul>
+       </td>
+       <td id="niobium" class="solids" tabindex="0">
+            <ul>
+             <li data-atomicnumber="41"><span class="bigfont1" aria-label="atomic number 41">41</span></li>
+             <li data-symbol="N b" aria-label="atomic symbol N b " class="bigfont2">N<span class="letter-tight">b</span></li>
+             <li data-element="niobium"><span class="bigfont1" aria-label="element">Niobium</span></li>
+             <li data-weight="92.906"><span class="bigfont1" aria-label="standard atomic weight 92 . 9 0 6">92.906</span></li>
+             <li data-groundstate="niobium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-ev="6.7589"><span class="bigfont1" aria-label="ionization energy 6 . 7 5 8 9">6.7589</span></li> 
+          </ul>
+       </td>
       <td>Row 5, Cell 5</td>
       <td>Row 5, Cell 6</td>
       <td>Row 5, Cell 7</td>
@@ -603,12 +632,17 @@
   </tbody>
 </table>
      </div>
+    </main>
+    <footer>
   <div  class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
      <ul>
         <li>content: 2 December 2019</li>
+        <li>WebAim: 2 December 2019 0</li>
+        <li>NuHTML: 2 December 2019 aria-label warnings</li>
      </ul>
   </div>
+    </footer>
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
 <script>
 function search_table(){

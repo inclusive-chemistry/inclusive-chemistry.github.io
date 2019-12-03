@@ -40,6 +40,7 @@
  </head>
 
  <body>   
+    
  <main>
 <div class="left100 bottom50">
 <h1>Searchable Periodic Table</h1>
@@ -124,7 +125,7 @@
              <li data-symbol="li" aria-label="atomic symbol L i" class="bigfont2">L<span class="letter-tight">i</span></li>
              <li data-element="lithium"><span class="bigfont1" aria-label="element">Lithium</span></li>
              <li data-weight="6.94"><span class="bigfont1" aria-label="standard atomic weight 6 . 0 4">6.94</span></li>
-             <li data-groundstate="lithium"><span class="bigfont1" aria-label="ground state one s">1s^22s</span></li>
+             <li data-groundstate="lithium"><span class="bigfont1" aria-label="ground state 1 s 2  2 s 1">1s<sup>2</sup>2s</span></li>
              <li data-ev="5.3917"><span class="bigfont1" aria-label="ionization energy 5 . 3 9 1 7">5.3917</span></li> 
           </ul>
        </td>
@@ -134,7 +135,7 @@
              <li data-symbol="be" aria-label="atomic symbol B e" class="bigfont2">B<span class="letter-tight">e</span></li>
              <li data-element="beryllium"><span class="bigfont1" aria-label="element">Beryllium</span></li>
              <li data-weight="9.0122"><span class="bigfont1" aria-label="standard atomic weight 9 . 0 1 2 2">9.0122</span></li>
-             <li data-groundstate="beryllium"><span class="bigfont1" aria-label="ground state one s">1s^2 2s^2</span></li>
+             <li data-groundstate="beryllium"><span class="bigfont1" aria-label="ground state 1 s 2  2 s 2">1s<sup>2</sup> 2s<sup>2</sup></span></li>
              <li data-ev="9.3227"><span class="bigfont1" aria-label="ionization energy 9 . 3 2 2 7">9.3227</span></li> 
           </ul>
        </td>
@@ -154,7 +155,7 @@
              <li data-symbol="b" aria-label="atomic symbol B" class="bigfont2">B<span class="letter-tight">&nbsp;</span></li>
              <li data-element="boron"><span class="bigfont1" aria-label="element">Boron</span></li>
              <li data-weight="10.81"><span class="bigfont1" aria-label="standard atomic weight 10 . 8 1">10.81</span></li>
-             <li data-groundstate="boron"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="boron"><span class="bigfont1" aria-label="ground 1 s 2 2 s 2 2 p">1s<sup>2</sup>2s<sup>2</sup>2p</span></li>
              <li data-ev="8.2980"><span class="bigfont1" aria-label="ionization energy 8 . 2 9 8 0">8.2980</span></li> 
           </ul>
        </td>
@@ -600,11 +601,20 @@
              <li data-symbol="C d" aria-label="atomic symbol C d" class="bigfont2">C<span class="letter-tight">d</span></li>
              <li data-element="cadmium"><span class="bigfont1" aria-label="element">Cadmium</span></li>
              <li data-weight="112.41"><span class="bigfont1" aria-label="standard atomic weight 112 . 4 1">112.41</span></li>
-             <li data-groundstate="cadmium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="cadmium"><span class="bigfont1" aria-label="ground [Kr]4d 10 5 s 2">[Kr]4d<sup>10</sup>5s<sup>2</sup></span></li>
              <li data-ev="8.9938"><span class="bigfont1" aria-label="ionization energy 8 . 9 9 3 8">8.9938</span></li> 
           </ul>
        </td>
-      <td>Row 5, Cell 12</td>
+       <td id="indium" class="solids" tabindex="0">
+            <ul>
+             <li data-atomicnumber="49"><span class="bigfont1" aria-label="atomic number 49">49</span></li>
+             <li data-symbol="C d" aria-label="atomic symbol C d" class="bigfont2">C<span class="letter-tight">d</span></li>
+             <li data-element="indium"><span class="bigfont1" aria-label="element">Indium</span></li>
+             <li data-weight="114.82"><span class="bigfont1" aria-label="standard atomic weight 114 . 8 2">114.82</span></li>
+             <li data-groundstate="indium"><span class="bigfont1" aria-label="ground [Kr] 4 d 10 5 s 2 5p">[Kr]4d<sup>10</sup>5s<sup>2</sup>5p</span></li>
+             <li data-ev="5.7864"><span class="bigfont1" aria-label="ionization energy 5 . 7 8 6 4">5.7864</span></li> 
+          </ul>
+       </td>
       <td>Row 5, Cell 13</td>
       <td>Row 5, Cell 14</td>
       <td>Row 5, Cell 15</td>
@@ -694,18 +704,18 @@
     </tr>
   </tbody>
 </table>
-     </div>
+</div>
+    
     </main>
     <footer>
-  <div  class="left100">
+  <div class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
-     <ul>
-        <li>content: 3 December 2019</li>
-        <li>WebAim: 2 December 2019 0</li>
-        <li>NuHTML: 2 December 2019 multiple aria-label warnings (expected, in this case)</li>
-     </ul>
+        Content: 3 December 2019<br />
+        WebAim: 2 December 2019 0<br />
+        NuHTML: 2 December 2019 multiple aria-label warnings (expected, in this case)<br />
+        Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
   </div>
-    </footer>
+</footer>
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
 <script>
 function search_table(){
@@ -734,10 +744,5 @@ function search_table(){
   }
 }
 </script> 
- <!-- MathJaX JavaScript -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
- <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  </body>   
 </html>

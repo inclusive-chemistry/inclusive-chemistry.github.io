@@ -39,7 +39,8 @@
 </style>
  </head>
 
- <body>
+ <body>   
+    
  <main>
 <div class="left100 bottom50">
 <h1>Searchable Periodic Table</h1>
@@ -124,7 +125,7 @@
              <li data-symbol="li" aria-label="atomic symbol L i" class="bigfont2">L<span class="letter-tight">i</span></li>
              <li data-element="lithium"><span class="bigfont1" aria-label="element">Lithium</span></li>
              <li data-weight="6.94"><span class="bigfont1" aria-label="standard atomic weight 6 . 0 4">6.94</span></li>
-             <li data-groundstate="lithium"><span class="bigfont1" aria-label="ground state one s">1s^22s</span></li>
+             <li data-groundstate="lithium"><span class="bigfont1" aria-label="ground state 1 s 2  2 s 1">1s<sup>2</sup>2s</span></li>
              <li data-ev="5.3917"><span class="bigfont1" aria-label="ionization energy 5 . 3 9 1 7">5.3917</span></li> 
           </ul>
        </td>
@@ -594,7 +595,16 @@
              <li data-ev="7.5762"><span class="bigfont1" aria-label="ionization energy 7 . 5 7 6 2">7.5762</span></li> 
           </ul>
        </td>
-      <td>Row 5, Cell 11</td>
+       <td id="cadmium" class="solids" tabindex="0">
+            <ul>
+             <li data-atomicnumber="48"><span class="bigfont1" aria-label="atomic number 48">48</span></li>
+             <li data-symbol="C d" aria-label="atomic symbol C d" class="bigfont2">C<span class="letter-tight">d</span></li>
+             <li data-element="cadmium"><span class="bigfont1" aria-label="element">Cadmium</span></li>
+             <li data-weight="112.41"><span class="bigfont1" aria-label="standard atomic weight 112 . 4 1">112.41</span></li>
+             <li data-groundstate="cadmium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-ev="8.9938"><span class="bigfont1" aria-label="ionization energy 8 . 9 9 3 8">8.9938</span></li> 
+          </ul>
+       </td>
       <td>Row 5, Cell 12</td>
       <td>Row 5, Cell 13</td>
       <td>Row 5, Cell 14</td>
@@ -685,18 +695,18 @@
     </tr>
   </tbody>
 </table>
-     </div>
+</div>
+    
     </main>
     <footer>
-  <div  class="left100">
+  <div class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
-     <ul>
-        <li>content: 3 December 2019</li>
-        <li>WebAim: 2 December 2019 0</li>
-        <li>NuHTML: 2 December 2019 multiple aria-label warnings (expected, in this case)</li>
-     </ul>
+        Content: 3 December 2019<br />
+        WebAim: 2 December 2019 0<br />
+        NuHTML: 2 December 2019 multiple aria-label warnings (expected, in this case)<br />
+        Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
   </div>
-    </footer>
+</footer>
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
 <script>
 function search_table(){
@@ -725,7 +735,10 @@ function search_table(){
   }
 }
 </script> 
- <!-- Optional JavaScript -->
+ <!-- See reference to mchem https://mhchem.github.io/MathJax-mhchem/ -->
+ <!-- MathJaX JavaScript -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  </body>   

@@ -52,6 +52,7 @@
    <h2 style="font-size:3em;">UNDER DEVELOPMENT</h2>
  <label for="search_field_input">Search Elements (Alphabetical Search):</label>
  <input id="search_field_input" onkeyup="search_periodic()" type="text">
+   <div id="demo">Response</div>
 </div>
 <!-- IMPORTANT do not change ARIA LABEL.  The aria-label is used to over-ride screen reader mispronunciation of numbers with decimals in them as they apply to atomic weights It is not the desired user experience to have the screen reader read the numbers as thousands--> 
 <!-- Excerpt from https://www.w3.org/TR/wai-aria/#aria-label If the label text is visible on screen, authors SHOULD use aria-labelledby and SHOULD NOT use aria-label. There may be instances where the name of an element cannot be determined programmatically from the content of the element, and there are cases where providing a visible label is not the desired user experience. -->    
@@ -1157,6 +1158,7 @@ var text;
    } else {
      text = "Waaay off..";
    }
+document.getElementById("demo").innerHTML = text;
 }
 </script> 
  </body>   

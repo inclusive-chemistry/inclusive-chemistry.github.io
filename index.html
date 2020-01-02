@@ -1142,13 +1142,20 @@
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
 <script>
 function search_periodic(){
-if (condition1) {
-  // block of code to be executed if condition1 is true
-} else if (condition2) {
-  // block of code to be executed if the condition1 is false and condition2 is true
+var letter = document.getElementById("search_field_input").value;
+var text;
+
+// If the letter is "c"
+if (letter === "c") {
+  text = "Spot on! Good job!";
+
+// If the letter is "b" or "d"
+} else if (letter === "b" || letter === "d") {
+  text = "Close, but not close enough.";
+
+// If the letter is anything else
 } else {
-  // block of code to be executed if the condition1 is false and condition2 is false
-}
+  text = "Waaay off..";
 }
 </script> 
  </body>   

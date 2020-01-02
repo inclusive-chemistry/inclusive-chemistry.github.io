@@ -1143,15 +1143,22 @@
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
 <script>
 function search_periodic(){
-var letter = document.getElementById("search_field_input").value;
+var letters = document.getElementById("search_field_input").value;
 var text;
 
    // If the letter is "c"
-   if (letter === "c") {
-     text = "Spot on! Good job!";
+   if (letters === "Hydrogen") {
+     text = "<br/>" 
+        + "<strong>" + "Hydrogen" + "</strong>"
+        + "<br/>" 
+        + "Atomic Number: 1"  + "<br/>"
+        + "Standard Atomic Weight: 1.008"  + "<br/>"
+        + "Ground State Configuration: 1s"  + "<br/>"
+        + "Ionization Energy: 13.5984"  + "<br/>"
+        + "<br/>";
 
    // If the letter is "b" or "d"
-   } else if (letter === "b" || letter === "d") {
+   } else if (letters === "b" || letters === "d") {
      text = "Close, but not close enough.";
 
    // If the letter is anything else

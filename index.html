@@ -1145,12 +1145,13 @@
 <script>
 function search_periodic(){
 var letters = document.getElementById("search_field_input").value;
+var letter = letters.toUpperCase();
 var text;
 
    // If the letter is "c"
-   if (letters === "Hydrogen") {
+   if (letter === "HYDROGEN") {
      text = "<br/>" 
-        + "<strong>" + "Hydrogen" + "</strong>"
+        + "<strong>" + "Hydrogen!" + "</strong>"
         + "<br/>" 
         + "Atomic Number: 1"  + "<br/>"
         + "Standard Atomic Weight: 1.008"  + "<br/>"

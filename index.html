@@ -52,7 +52,7 @@
    <h2 style="font-size:3em;">UNDER DEVELOPMENT</h2>
  <label for="search_field_input">Search Elements (Alphabetical Search):</label>
  <input id="search_field_input" onkeyup="search_periodic()" type="text">
-   <div id="response">Response</div>
+   <div id="response" role="region" aria-live="polite">Response</div>
 </div>
 <!-- IMPORTANT do not change ARIA LABEL.  The aria-label is used to over-ride screen reader mispronunciation of numbers with decimals in them as they apply to atomic weights It is not the desired user experience to have the screen reader read the numbers as thousands--> 
 <!-- Excerpt from https://www.w3.org/TR/wai-aria/#aria-label If the label text is visible on screen, authors SHOULD use aria-labelledby and SHOULD NOT use aria-label. There may be instances where the name of an element cannot be determined programmatically from the content of the element, and there are cases where providing a visible label is not the desired user experience. -->    
@@ -1134,10 +1134,11 @@
     <footer>
   <div class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
-        Content: 6 December 2019<br />
+        Content: 3 January 2020<br />
         WebAim: 2 December 2019 0<br />
         NuHTML: 2 December 2019 multiple aria-label warnings (expected, in this case)<br />
         Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
+        Note:aria-live role="region" added 3 Jan 2020 to display box for elements<br />
   </div>
 </footer>
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->

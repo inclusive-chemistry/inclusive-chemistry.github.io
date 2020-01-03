@@ -45,12 +45,11 @@
 <div class="left100 bottom50">
 <h1>Searchable Periodic Table</h1>
 <p tabindex="0">The elements are set up in a table, one element per cell. Each table cell contains the name of the element, and a list of five items containing the atomic number, the atomic symbol, the atomic weight, the ground state configuration, and the ionization energy.</p>
-<p tabindex="0">Tab</p>
 </div>
 
 <div class="left100 bottom50">
-   <h2 style="font-size:3em;">UNDER DEVELOPMENT</h2>
- <label for="search_field_input">Search Elements (Alphabetical Search):</label>
+ <h2 style="font-size:3em;">UNDER DEVELOPMENT</h2>
+ <label for="search_field_input">Search elements by name:</label>
  <input id="search_field_input" onkeyup="search_periodic()" type="text">
    <div id="response" role="region" aria-live="polite">Response</div>
 </div>
@@ -1087,7 +1086,7 @@
              <li data-ev="5.6704"><span class="bigfont1" aria-label="ionization energy 5 . 6 7 0 4">5.6704</span></li> 
           </ul>
       </td>
-       <td id="Gadolinium" class="solids" tabindex="0">
+       <td id="gadolinium" class="solids" tabindex="0">
             <ul>
              <li data-atomicnumber="64"><span class="bigfont1" aria-label="atomic number 64">64</span></li>
              <li data-symbol="G d" aria-label="atomic symbol G d" class="bigfont2">G<span class="letter-tight">d</span></li>
@@ -1097,7 +1096,7 @@
              <li data-ev="6.1498"><span class="bigfont1" aria-label="ionization energy 6 . 1 4 9 8">6.1498</span></li> 
           </ul>
       </td>
-       <td id="Terbium" class="solids" tabindex="0">
+       <td id="terbium" class="solids" tabindex="0">
             <ul>
              <li data-atomicnumber="65"><span class="bigfont1" aria-label="atomic number 65">65</span></li>
              <li data-symbol="T b" aria-label="atomic symbol T b" class="bigfont2">T<span class="letter-tight">b</span></li>
@@ -1107,7 +1106,16 @@
              <li data-ev="5.8638"><span class="bigfont1" aria-label="ionization energy 5 . 8 6 3 8">5.8638</span></li> 
           </ul>
       </td>
-      <td>Row 8, Cell 12</td>
+      <td id="dysprosium" class="solids" tabindex="0">
+            <ul>
+             <li data-atomicnumber="66"><span class="bigfont1" aria-label="atomic number 66">66</span></li>
+             <li data-symbol="D y" aria-label="atomic symbol D y" class="bigfont2">D<span class="letter-tight">y</span></li>
+             <li data-element="dysprosium"><span class="bigfont1" aria-label="element">Dysprosium</span></li>
+             <li data-weight="162.50"><span class="bigfont1" aria-label="standard atomic weight 162  .5 0">162.50</span></li>
+             <li data-groundstate="dysprosium"><span class="bigfont1" aria-label="ground [Xe]4f 10 6s 2">[Xe]4f<sup>10</sup>6s<sup>2</sup><span></li>
+             <li data-ev="5.9391"><span class="bigfont1" aria-label="ionization energy 5 . 9 3 9 1">5.9391</span></li> 
+          </ul>
+      </td>
       <td>Row 8, Cell 13</td>
       <td>Row 8, Cell 14</td>
       <td>Row 8, Cell 15</td>
@@ -1159,10 +1167,11 @@ var text;
 
    // If the letter is "c"
    if (letter === "HYDROGEN") {
-     text = "<br/>" 
+     text = "<br/>"
+        + "<br/>"
         + "<strong>" + "Hydrogen" + "</strong>"
         + "<br/>" 
-        + "Ground State" + "2 S 1/2" + "<br/>"
+        + "Ground State: 2 S 1/2" + "<br/>"
         + "Atomic Number: 1"  + "<br/>"
         + "Standard Atomic Weight: 1.008"  + "<br/>"
         + "Ground State Configuration: 1s"  + "<br/>"

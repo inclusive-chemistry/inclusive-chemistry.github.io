@@ -1097,7 +1097,16 @@
              <li data-ev="6.1498"><span class="bigfont1" aria-label="ionization energy 6 . 1 4 9 8">6.1498</span></li> 
           </ul>
       </td>
-      <td>Row 8, Cell 11</td>
+       <td id="Terbium" class="solids" tabindex="0">
+            <ul>
+             <li data-atomicnumber="65"><span class="bigfont1" aria-label="atomic number 65">65</span></li>
+             <li data-symbol="T b" aria-label="atomic symbol T b" class="bigfont2">T<span class="letter-tight">b</span></li>
+             <li data-element="terbium"><span class="bigfont1" aria-label="element">Terbium</span></li>
+             <li data-weight="158.93"><span class="bigfont1" aria-label="standard atomic weight 158 . 9 3">158.93</span></li>
+             <li data-groundstate="terbium"><span class="bigfont1" aria-label="ground [Xe]4f 9 6s 2">[Xe]4f<sup>9</sup>6s<sup>2</sup><span></li>
+             <li data-ev="5.8638"><span class="bigfont1" aria-label="ionization energy 5 . 8 6 3 8">5.8638</span></li> 
+          </ul>
+      </td>
       <td>Row 8, Cell 12</td>
       <td>Row 8, Cell 13</td>
       <td>Row 8, Cell 14</td>
@@ -1145,13 +1154,15 @@
 <script>
 function search_periodic(){
 var letters = document.getElementById("search_field_input").value;
+var letter = letters.toUpperCase();
 var text;
 
    // If the letter is "c"
-   if (letters === "Hydrogen") {
+   if (letter === "HYDROGEN") {
      text = "<br/>" 
         + "<strong>" + "Hydrogen" + "</strong>"
         + "<br/>" 
+        + "Ground State" + "2 S 1/2" + "<br/>"
         + "Atomic Number: 1"  + "<br/>"
         + "Standard Atomic Weight: 1.008"  + "<br/>"
         + "Ground State Configuration: 1s"  + "<br/>"
@@ -1169,5 +1180,5 @@ var text;
 document.getElementById("response").innerHTML = text;
 }
 </script> 
-</body>   
+ </body>   
 </html>

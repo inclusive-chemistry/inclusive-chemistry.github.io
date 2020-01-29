@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
    <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
    <!--[if lt IE 9]>
   <script>
@@ -1174,7 +1174,7 @@
       <td class="hidden">Row 9, Cell 3</td>
       <td id="actinium" class="solids" tabindex="0">
             <ul>
-             <li data-atomicnumber="90"><span class="bigfont1" aria-label="atomic number 90">90</span></li>
+             <li data-atomicnumber="89"><span class="bigfont1" aria-label="atomic number 89">89</span></li>
              <li data-symbol="A c" aria-label="atomic symbol A c" class="bigfont2">A<span class="letter-tight">c</span></li>
              <li data-element="actinium"><span class="bigfont1" aria-label="element">Actinium</span></li>
              <li data-weight="(227)"><span class="bigfont1" aria-label="standard atomic weight ( 227 )">(227)</span></li>
@@ -1332,11 +1332,15 @@
  <footer>
   <div class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
-        Content: 27 January 2020<br />
+        Content: 29 January 2020<br />
         WebAim: 27 January 2020 0<br />
         NuHTML: 27 January 2020 multiple aria-label warnings (expected, in this case)<br />
         Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
         Note:aria-live role="region" added 3 Jan 2020 to display box for elements<br />
+        ToDo: Fix CU and Ni (28 and 29)<br />
+        ToDo: Create button for only Atomic # and Atomic Weight<br />
+        ToDo: Set up search for two-letter Atomic Symbol<br />
+        ToDo: Bring down headers into cells<br />
   </div>
 </footer>
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
@@ -1352,13 +1356,27 @@ var text;
         + "<br/>"
         + "<strong>" + "Hydrogen" + "</strong>"
         + "<br/>" 
-        + "Ground State: 2 S 1/2" + "<br/>"
+        + "Ground State: 1s" + "<br/>"
+        + "Atomic Number: 1"  + "<br/>"
+        + "Standard Atomic Weight: 1.008"  + "<br/>"
+        + "Ground State Configuration: 1s"  + "<br/>"
+        + "Ionization Energy: 13.5984"  + "<br/>"
+        + "<br/>";
+ // If the letter is "b" or "d"
+   } else if (letter === "HELIUM") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Helium" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 1"  + "<br/>"
         + "Standard Atomic Weight: 1.008"  + "<br/>"
         + "Ground State Configuration: 1s"  + "<br/>"
         + "Ionization Energy: 13.5984"  + "<br/>"
         + "<br/>";
 
+   // If the letter is anything else
+      
    // If the letter is "b" or "d"
    } else if (letters === "b" || letters === "d") {
      text = "Close, but not close enough.";

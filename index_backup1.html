@@ -408,10 +408,10 @@
             <ul>
              <li data-atomicnumber="29"><span class="bigfont1" aria-label="atomic number 29">29</span></li>
              <li data-symbol="ni" aria-label="atomic symbol C u" class="bigfont2">C<span class="letter-tight">u</span></li>
-             <li data-element="nickel"><span class="bigfont1" aria-label="element">Nickel</span></li>
-             <li data-weight="58.693"><span class="bigfont1" aria-label="standard atomic weight 58 . 6 9 3">58.693</span></li>
-             <li data-groundstate="nickel"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
-             <li data-ev="7.6399"><span class="bigfont1" aria-label="ionization energy 7 . 6 3 9 9">7.6399</span></li> 
+             <li data-element="copper"><span class="bigfont1" aria-label="element">Copper</span></li>
+             <li data-weight="63.546"><span class="bigfont1" aria-label="standard atomic weight 63 . 5 4 6">63.546</span></li>
+             <li data-groundstate="copper"><span class="bigfont1" aria-label="ground [Ar]3d 10 4s">[Ar]3d<sup>10</sup>4s</span></li>
+             <li data-ev="7.7264"><span class="bigfont1" aria-label="ionization energy 7 . 7 2 6 4">7.7264</span></li> 
           </ul>
       </td>
       <td id="zinc" class="solids" tabindex="0">
@@ -1332,11 +1332,16 @@
  <footer>
   <div class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
-        Content: 27 January 2020<br />
+        Content: 5 February 2020<br />
         WebAim: 27 January 2020 0<br />
         NuHTML: 27 January 2020 multiple aria-label warnings (expected, in this case)<br />
         Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
         Note:aria-live role="region" added 3 Jan 2020 to display box for elements<br />
+        ToDo: Fix CU and Ni (28 and 29)<br />
+        ToDo: remove TBD from shell configurationss<br />
+        ToDo: Create button for only Atomic # and Atomic Weight<br />
+        ToDo: Set up search for two-letter Atomic Symbol<br />
+        ToDo: Bring down headers into cells<br />
   </div>
 </footer>
   <!-- https://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table -->
@@ -1352,13 +1357,27 @@ var text;
         + "<br/>"
         + "<strong>" + "Hydrogen" + "</strong>"
         + "<br/>" 
-        + "Ground State: 2 S 1/2" + "<br/>"
+        + "Ground State: 1s" + "<br/>"
+        + "Atomic Number: 1"  + "<br/>"
+        + "Standard Atomic Weight: 1.008"  + "<br/>"
+        + "Ground State Configuration: 1s"  + "<br/>"
+        + "Ionization Energy: 13.5984"  + "<br/>"
+        + "<br/>";
+ // If the letter is "b" or "d"
+   } else if (letter === "HELIUM") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Helium" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 1"  + "<br/>"
         + "Standard Atomic Weight: 1.008"  + "<br/>"
         + "Ground State Configuration: 1s"  + "<br/>"
         + "Ionization Energy: 13.5984"  + "<br/>"
         + "<br/>";
 
+   // If the letter is anything else
+      
    // If the letter is "b" or "d"
    } else if (letters === "b" || letters === "d") {
      text = "Close, but not close enough.";

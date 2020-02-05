@@ -35,6 +35,9 @@ table, th, td {
 .hidden {
   visibility: hidden;
 }
+.opacityzero {
+  opacity: 0;
+}
 .bigfont1 {
   font-weight: bold;
   font-size: 1em

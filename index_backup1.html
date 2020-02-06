@@ -297,7 +297,7 @@
              <li data-symbol="ar" aria-label="atomic symbol A r" class="bigfont2">A<span class="letter-tight">r</span></li>
              <li data-element="argon"><span class="bigfont1" aria-label="element">Argon</span></li>
              <li data-weight="39.948"><span class="bigfont1" aria-label="standard atomic weight 39 . 9 4 8">39.948</span></li>
-             <li data-groundstate="argon"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="argon"><span class="bigfont1" aria-label="ground [Ar]4s">[Ar]4s</span></li>
              <li data-ev="15.7596"><span class="bigfont1" aria-label="ionization energy 15 . 7 5 9 6">15.7596</span></li> 
           </ul>
       </td>
@@ -329,7 +329,7 @@
              <li data-symbol="sc" aria-label="atomic symbol S c" class="bigfont2">S<span class="letter-tight">c</span></li>
              <li data-element="scandium"><span class="bigfont1" aria-label="element">Scandium</span></li>
              <li data-weight="44.956"><span class="bigfont1" aria-label="standard atomic weight 44 . 9 5 6">44.956</span></li>
-             <li data-groundstate="scandium"><span class="bigfont1" aria-label="ground [Ar]3d 4s 2">[Ar]3d 4s<sup>2</sup></span></li>
+             <li data-groundstate="scandium"><span class="bigfont1" aria-label="ground [Ar]3d 4s 2">[Ar]3d4s<sup>2</sup></span></li>
              <li data-ev="6.5615"><span class="bigfont1" aria-label="ionization energy 6 . 5 6 1 5">6.5615</span></li> 
           </ul>
       </td>       
@@ -419,7 +419,7 @@
              <li data-symbol="zn" aria-label="atomic symbol Z n" class="bigfont2">Z<span class="letter-tight">n</span></li>
              <li data-element="zinc"><span class="bigfont1" aria-label="element">Zinc</span></li>
              <li data-weight="65.38"><span class="bigfont1" aria-label="standard atomic weight 65 . 3 8">65.38</span></li>
-             <li data-groundstate="zinc"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="zinc"><span class="bigfont1" aria-label="ground [Ar]3d 4p 104s2">[Ar]3d4p<sup>10</sup>4s<sup>2</sup></span></li>
              <li data-ev="9.3942"><span class="bigfont1" aria-label="ionization energy 9 . 3 9 4 2">9.3942</span></li> 
           </ul>
         </td>
@@ -1334,6 +1334,7 @@
         Content: 6 February 2020<br />
         WebAim: 27 January 2020 0<br />
         NuHTML: 27 January 2020 multiple aria-label warnings (expected, in this case)<br />
+        Note: Pronunciation referenced in builing this page SSML wiki at https://github.com/w3c/pronunciation/wiki<br />
         Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
         Note:aria-live role="region" added 3 Jan 2020 to display box for elements<br />
         ToDo: Fix CU and Ni (28 and 29)<br />
@@ -1398,19 +1399,29 @@ var text;
         + "Ground State Configuration: 1s<sup>2</sup> 2s"  + "<br/>"
         + "Ionization Energy: 9.32277"  + "<br/>"
         + "<br/>";
-             // If the letter is "Beryllium"
+       // If the letter is "Boron"
    } else if (letter === "BORON") {
         text = "<br/>"
         + "<br/>"
-        + "<strong>" + "Beryllium" + "</strong>"
+        + "<strong>" + "Boron" + "</strong>"
         + "<br/>" 
         + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 5"  + "<br/>"
-        + "Standard Atomic Weight: 9.0122"  + "<br/>"
-        + "Ground State Configuration: 1s<sup>2</sup> 2s"  + "<br/>"
+        + "Standard Atomic Weight:  10.81"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p"  + "<br/>"
         + "Ionization Energy: 8.2980"  + "<br/>"
         + "<br/>";
-
+   } else if (letter === "CARBON") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Carbon" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
+        + "Atomic Number: 6"  + "<br/>"
+        + "Standard Atomic Weight:  10.81"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>2</sup>"  + "<br/>"
+        + "Ionization Energy: 11.2603"  + "<br/>"
+        + "<br/>";
 
    // If the letter is anything else
       

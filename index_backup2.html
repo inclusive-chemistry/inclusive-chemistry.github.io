@@ -419,7 +419,7 @@
              <li data-symbol="zn" aria-label="atomic symbol Z n" class="bigfont2">Z<span class="letter-tight">n</span></li>
              <li data-element="zinc"><span class="bigfont1" aria-label="element">Zinc</span></li>
              <li data-weight="65.38"><span class="bigfont1" aria-label="standard atomic weight 65 . 3 8">65.38</span></li>
-             <li data-groundstate="zinc"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="zinc"><span class="bigfont1" aria-label="ground [Ar]3d 4p 104s2">[Ar]3d4p<sup>10</sup>4s<sup>2</sup></span></li>
              <li data-ev="9.3942"><span class="bigfont1" aria-label="ionization energy 9 . 3 9 4 2">9.3942</span></li> 
           </ul>
         </td>
@@ -429,7 +429,7 @@
              <li data-symbol="ga" aria-label="atomic symbol G a" class="bigfont2">G<span class="letter-tight">a</span></li>
              <li data-element="gallium"><span class="bigfont1" aria-label="element">Gallium</span></li>
              <li data-weight="69.723"><span class="bigfont1" aria-label="standard atomic weight 69 . 7 2 3">69.723</span></li>
-             <li data-groundstate="gallium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="gallium"><span class="bigfont1" aria-label="ground [Ar]3d 10 4s 2 4p">[Ar]3d<sup>10</sup>4s<sup>2</sup>4p</span></li>
              <li data-ev="5.9993"><span class="bigfont1" aria-label="ionization energy 5 . 9 9 9 3">5.9993</span></li> 
           </ul>
        </td>
@@ -1334,6 +1334,8 @@
         Content: 6 February 2020<br />
         WebAim: 27 January 2020 0<br />
         NuHTML: 27 January 2020 multiple aria-label warnings (expected, in this case)<br />
+        Note: Speech Synthesis referenced in builing this page https://www.w3.org/TR/speech-synthesis11/#S1.1<br />
+        Note: Pronunciation referenced in builing this page SSML wiki at https://github.com/w3c/pronunciation/wiki<br />
         Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
         Note:aria-live role="region" added 3 Jan 2020 to display box for elements<br />
         ToDo: Fix CU and Ni (28 and 29)<br />
@@ -1410,7 +1412,17 @@ var text;
         + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p"  + "<br/>"
         + "Ionization Energy: 8.2980"  + "<br/>"
         + "<br/>";
-
+   } else if (letter === "CARBON") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Carbon" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
+        + "Atomic Number: 6"  + "<br/>"
+        + "Standard Atomic Weight:  10.81"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>2</sup>"  + "<br/>"
+        + "Ionization Energy: 11.2603"  + "<br/>"
+        + "<br/>";
 
    // If the letter is anything else
       

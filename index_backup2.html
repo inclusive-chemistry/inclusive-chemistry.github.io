@@ -205,7 +205,7 @@
              <li data-symbol="ne" aria-label="atomic symbol N e" class="bigfont2">N<span class="letter-tight">e</span></li>
              <li data-element="neon"><span class="bigfont1" aria-label="element">Neon</span></li>
              <li data-weight="20.180"><span class="bigfont1" aria-label="standard atomic weight 20 . 1 8 0">20.180</span></li>
-             <li data-groundstate="flourine"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="flourine"><span class="bigfont1" aria-label="ground 1s 2 2s 2 2p 6">1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup></span></li>
              <li data-ev="21.5645"><span class="bigfont1" aria-label="ionization energy 21 . 5 6 4 5">21.5645</span></li> 
           </ul>
        </td>
@@ -247,7 +247,7 @@
              <li data-symbol="al" aria-label="atomic symbol A l" class="bigfont2">A<span class="letter-tight">l</span></li>
              <li data-element="magnesium"><span class="bigfont1" aria-label="element">Aluminum</span></li>
              <li data-weight="26.982"><span class="bigfont1" aria-label="standard atomic weight 26 . 9 8 2 5">26.982</span></li>
-             <li data-groundstate="sodium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="sodium"><span class="bigfont1" aria-label="ground [Ne]3s 2 3p">[Ne]3s<sup>2</sup>3p</span></li>
              <li data-ev="5.9858"><span class="bigfont1" aria-label="ionization energy 5 . 9 8 5 8">5.9858</span></li> 
           </ul>
       </td>
@@ -257,7 +257,7 @@
              <li data-symbol="si" aria-label="atomic symbol S i" class="bigfont2">S<span class="letter-tight">i</span></li>
              <li data-element="silicon"><span class="bigfont1" aria-label="element">Silicon</span></li>
              <li data-weight="28.085"><span class="bigfont1" aria-label="standard atomic weight 28 . 0 8 5">28.085</span></li>
-             <li data-groundstate="sodium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="sodium"><span class="bigfont1" aria-label="ground [Ne]3s 2 3p 2">[Ne]3s<sup>2</sup>3p<sup>2</sup></span></li>
              <li data-ev="8.1517"><span class="bigfont1" aria-label="ionization energy 8 . 1 5 1 7">8.1517</span></li> 
           </ul>
       </td>
@@ -277,7 +277,7 @@
              <li data-symbol="s" aria-label="atomic symbol S" class="bigfont2">S<span class="letter-tight">&nbsp;</span></li>
              <li data-element="sulfur"><span class="bigfont1" aria-label="element">Sulfur</span></li>
              <li data-weight="32.06"><span class="bigfont1" aria-label="standard atomic weight 32  .0 6">32.06</span></li>
-             <li data-groundstate="sulfur"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="sulfur"><span class="bigfont1" aria-label="ground [Ne]3s 2 3p 4">[Ne]3s<sup>2</sup>3p<sup>4</sup></span></li>
              <li data-ev="10.3600"><span class="bigfont1" aria-label="ionization energy 10 . 3 6 0 0">10.3600</span></li> 
           </ul>
       </td>
@@ -287,7 +287,7 @@
              <li data-symbol="cl" aria-label="atomic symbol C l" class="bigfont2">C<span class="letter-tight">l</span></li>
              <li data-element="chlorine"><span class="bigfont1" aria-label="element">Chlorine</span></li>
              <li data-weight="35.45"><span class="bigfont1" aria-label="standard atomic weight 35 . 4 5">35.45</span></li>
-             <li data-groundstate="chlorine"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="chlorine"><span class="bigfont1" aria-label="ground [Ne]3s 2 3p 5">[Ne]3s<sup>2</sup>3p<sup>5</sup></span></li>
              <li data-ev="12.9676"><span class="bigfont1" aria-label="ionization energy 12 . 9 6 7 6">12.9676</span></li> 
           </ul>
       </td>
@@ -1448,7 +1448,27 @@ var text;
         + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>5</sup>"  + "<br/>"
         + "Ionization Energy: 17.4228"  + "<br/>"
         + "<br/>";
-
+     } else if (letter === "NEON") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Neon" + "</strong>"
+        + "<br/>" 
+        + "Atomic Number: 10"  + "<br/>"
+        + "Standard Atomic Weight: 18.998"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>"  + "<br/>"
+        + "Ionization Energy: 21.5645"  + "<br/>"
+        + "<br/>";
+      } else if (letter === "N.....") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Neon" + "</strong>"
+        + "<br/>" 
+        + "Atomic Number: 10"  + "<br/>"
+        + "Standard Atomic Weight: 20.180"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>"  + "<br/>"
+        + "Ionization Energy: 17.4228"  + "<br/>"
+        + "<br/>";      
+        
    // If the letter is anything else
       
    // If the letter is "b" or "d"

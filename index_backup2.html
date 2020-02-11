@@ -165,7 +165,7 @@
              <li data-symbol="c" aria-label="atomic symbol C" class="bigfont2">C<span class="letter-tight">&nbsp;</span></li>
              <li data-element="carbon"><span class="bigfont1" aria-label="element">Carbon</span></li>
              <li data-weight="12.011"><span class="bigfont1" aria-label="standard atomic weight 12 . 0 1 1">12.011</span></li>
-             <li data-groundstate="boron"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="boron"><span class="bigfont1" aria-label="ground 1s 2 2s 2 2p 2">1s<sup>2</sup>2s<sup>2</sup>2p<sup>2</sup></span></li>
              <li data-ev="11.2603"><span class="bigfont1" aria-label="ionization energy 11 . 2 6 0 3">11.2603</span></li> 
           </ul>
        </td>
@@ -175,7 +175,7 @@
              <li data-symbol="n" aria-label="atomic symbol N" class="bigfont2">N<span class="letter-tight">&nbsp;</span></li>
              <li data-element="nitrogen"><span class="bigfont1" aria-label="element">Nitrogen</span></li>
              <li data-weight="14.007"><span class="bigfont1" aria-label="standard atomic weight 14 . 0 0 7">14.007</span></li>
-             <li data-groundstate="nitrogen"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="nitrogen"><span class="bigfont1" aria-label="ground 1s22s22p3">1s<sup>2</sup>2s<sup>2</sup>2p<sup>3</sup></span></li>
              <li data-ev="14.5341"><span class="bigfont1" aria-label="ionization energy 14 . 5 3 4 1">14.5341</span></li> 
           </ul>
        </td>
@@ -185,7 +185,7 @@
              <li data-symbol="o" aria-label="atomic symbol O" class="bigfont2">O<span class="letter-tight">&nbsp;</span></li>
              <li data-element="oxygen"><span class="bigfont1" aria-label="element">Oxygen</span></li>
              <li data-weight="15.999"><span class="bigfont1" aria-label="standard atomic weight 15 . 9 9 9">15.999</span></li>
-             <li data-groundstate="oxygen"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="oxygen"><span class="bigfont1" aria-label="ground 1s 2 2s 2 2p 4">1s<sup>2</sup> 2s<sup>2</sup>2p<sup>4</sup></span></li>
              <li data-ev="13.6181"><span class="bigfont1" aria-label="ionization energy 13 . 6 1 8 1">13.6181</span></li> 
           </ul>
        </td>
@@ -1359,7 +1359,6 @@ var text;
         + "<br/>"
         + "<strong>" + "Hydrogen" + "</strong>"
         + "<br/>" 
-        + "Ground State: 1s" + "<br/>"
         + "Atomic Number: 1"  + "<br/>"
         + "Standard Atomic Weight: 1.008"  + "<br/>"
         + "Ground State Configuration: 1s"  + "<br/>"
@@ -1371,7 +1370,6 @@ var text;
         + "<br/>"
         + "<strong>" + "Helium" + "</strong>"
         + "<br/>" 
-        + "Ground State: 1s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 2"  + "<br/>"
         + "Standard Atomic Weight: 4.0026"  + "<br/>"
         + "Ground State Configuration: 1s<sup>2</sup>"  + "<br/>"
@@ -1383,7 +1381,6 @@ var text;
         + "<br/>"
         + "<strong>" + "Lithium" + "</strong>"
         + "<br/>" 
-        + "Ground State: 1s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 3"  + "<br/>"
         + "Standard Atomic Weight:  6.94"  + "<br/>"
         + "Ground State Configuration: 1s<sup>2</sup> 2s"  + "<br/>"
@@ -1395,7 +1392,6 @@ var text;
         + "<br/>"
         + "<strong>" + "Beryllium" + "</strong>"
         + "<br/>" 
-        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 4"  + "<br/>"
         + "Standard Atomic Weight: 9.0122"  + "<br/>"
         + "Ground State Configuration: 1s<sup>2</sup> 2s"  + "<br/>"
@@ -1407,7 +1403,6 @@ var text;
         + "<br/>"
         + "<strong>" + "Boron" + "</strong>"
         + "<br/>" 
-        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 5"  + "<br/>"
         + "Standard Atomic Weight:  10.81"  + "<br/>"
         + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p"  + "<br/>"
@@ -1418,7 +1413,6 @@ var text;
         + "<br/>"
         + "<strong>" + "Carbon" + "</strong>"
         + "<br/>" 
-        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 6"  + "<br/>"
         + "Standard Atomic Weight:   12.011"  + "<br/>"
         + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>2</sup>"  + "<br/>"
@@ -1429,11 +1423,20 @@ var text;
         + "<br/>"
         + "<strong>" + "Nitrogen" + "</strong>"
         + "<br/>" 
-        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
-        + "Atomic Number: 6"  + "<br/>"
+        + "Atomic Number: 7"  + "<br/>"
         + "Standard Atomic Weight:   14.007"  + "<br/>"
         + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>3</sup>"  + "<br/>"
         + "Ionization Energy: 14.5341"  + "<br/>"
+        + "<br/>";
+   } else if (letter === "OXYGEN") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Oxygen" + "</strong>"
+        + "<br/>" 
+        + "Atomic Number: 8"  + "<br/>"
+        + "Standard Atomic Weight:   15.999"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>4</sup>"  + "<br/>"
+        + "Ionization Energy: 13.6181"  + "<br/>"
         + "<br/>";
 
    // If the letter is anything else

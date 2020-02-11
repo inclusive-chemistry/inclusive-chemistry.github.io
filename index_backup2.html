@@ -217,7 +217,7 @@
              <li data-symbol="na" aria-label="atomic symbol N a" class="bigfont2">N<span class="letter-tight">a</span></li>
              <li data-element="sodium"><span class="bigfont1" aria-label="element">Sodium</span></li>
              <li data-weight="22.990"><span class="bigfont1" aria-label="standard atomic weight 22 . 9 9 0">22.990</span></li>
-             <li data-groundstate="sodium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="sodium"><span class="bigfont1" aria-label="ground [Ne]3s">[Ne]3s</span></li>
              <li data-ev="5.1391"><span class="bigfont1" aria-label="ionization energy 5 . 1 3 9 1">5.1391</span></li> 
           </ul>
       </td>
@@ -227,7 +227,7 @@
              <li data-symbol="mg" aria-label="atomic symbol M g" class="bigfont2">M<span class="letter-tight">g</span></li>
              <li data-element="magnesium"><span class="bigfont1" aria-label="element">Magnesium</span></li>
              <li data-weight="24.305"><span class="bigfont1" aria-label="standard atomic weight 24 . 3 0 5">24.305</span></li>
-             <li data-groundstate="sodium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="sodium"><span class="bigfont1" aria-label="ground [Ne]3s 2">[Ne]3s<sup>2</sup></span></li>
              <li data-ev="7.6462"><span class="bigfont1" aria-label="ionization energy 7 . 6 4 6 2">7.6462</span></li> 
           </ul>
       </td>
@@ -479,7 +479,7 @@
              <li data-symbol="kr" aria-label="atomic symbol K r" class="bigfont2">K<span class="letter-tight">r</span></li>
              <li data-element="krypton"><span class="bigfont1" aria-label="element">Krypton</span></li>
              <li data-weight="83.798"><span class="bigfont1" aria-label="standard atomic weight 83 . 7 9 8">83.798</span></li>
-             <li data-groundstate="krypton"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="krypton"><span class="bigfont1" aria-label="ground [Ar]3d 10 4s 2 4p 6">[Ar]3d<sup>10</sup>4s<sup>2</sup>4p<sup>6</sup></span></li>
              <li data-ev="13.9996"><span class="bigfont1" aria-label="ionization energy 13 . 9 9 9 6">13.9996</span></li> 
           </ul>
        </td>
@@ -1420,9 +1420,20 @@ var text;
         + "<br/>" 
         + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
         + "Atomic Number: 6"  + "<br/>"
-        + "Standard Atomic Weight:  10.81"  + "<br/>"
+        + "Standard Atomic Weight:   12.011"  + "<br/>"
         + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>2</sup>"  + "<br/>"
         + "Ionization Energy: 11.2603"  + "<br/>"
+        + "<br/>";
+   } else if (letter === "NITROGEN") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Nitrogen" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
+        + "Atomic Number: 6"  + "<br/>"
+        + "Standard Atomic Weight:   14.007"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>3</sup>"  + "<br/>"
+        + "Ionization Energy: 14.5341"  + "<br/>"
         + "<br/>";
 
    // If the letter is anything else

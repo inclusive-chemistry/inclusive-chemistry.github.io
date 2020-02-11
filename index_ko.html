@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
    <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
    <!--[if lt IE 9]>
   <script>
@@ -38,10 +38,9 @@
 }	
 </style>
  </head>
-
  <body>   
     
- <main>
+<main>
 <div class="left100 bottom50">
 <h1>Searchable Periodic Table</h1>
 <p tabindex="0">The elements are set up in a table, one element per cell. Each table cell contains the name of the element, and a list of five items containing the atomic number, the atomic symbol, the atomic weight, the ground state configuration, and the ionization energy.</p>
@@ -60,24 +59,24 @@
 <table id="table_id">
   <thead>
     <tr>
-      <th>Group IA</th>
-      <th>Group IIA</th>
-      <th>Header 3</th>
-      <th>Header 4</th>
-      <th>Header 5</th>
-      <th>Header 6</th>
-      <th>Header 7</th>
-      <th>Header 8</th>
-      <th>Header 9</th>
-      <th>Header 10</th>
-      <th>Header 11</th>
-      <th>Header 12</th>
-      <th>III A</th>
-      <th>IV A</th>
-      <th>V A</th>
-      <th>VI A</th>
-      <th>VII A</th>
-      <th>VIII A</th>
+      <th class="opacityzero">Group IA</th>
+      <th class="opacityzero">Group IIA</th>
+      <th class="opacityzero">Group IIIB</th>
+      <th class="opacityzero">Group IVB</th>
+      <th class="opacityzero">Header Group VB</th>
+      <th class="opacityzero">Group VIB</th>
+      <th class="opacityzero">Group VIIB</th>
+      <th class="opacityzero">Header 8</th>
+      <th class="opacityzero">Header 9</th>
+      <th class="opacityzero">Header 10</th>
+      <th class="opacityzero">Header 11</th>
+      <th class="opacityzero">Header 12</th>
+      <th class="opacityzero">III A</th>
+      <th class="opacityzero">IV A</th>
+      <th class="opacityzero">V A</th>
+      <th class="opacityzero">VI A</th>
+      <th class="opacityzero">VII A</th>
+      <th class="opacityzero">VIII A</th>
     </tr>
   </thead>
   <tbody>
@@ -268,7 +267,7 @@
              <li data-symbol="p" aria-label="atomic symbol P" class="bigfont2">P<span class="letter-tight">&nbsp;</span></li>
              <li data-element="phosphorus"><span class="bigfont1" aria-label="element">Phosphorus</span></li>
              <li data-weight="30.974"><span class="bigfont1" aria-label="standard atomic weight 30 . 9 7 4">30.974</span></li>
-             <li data-groundstate="phosphorus"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="phosphorus"><span class="bigfont1" aria-label="ground [Ne]3s23p3">[Ne]3s<sup>2</sup>3p<sup>3</sup></span></li>
              <li data-ev="10.4867"><span class="bigfont1" aria-label="ionization energy 10 . 4 8 6 7">10.4867</span></li> 
           </ul>
       </td>
@@ -298,7 +297,7 @@
              <li data-symbol="ar" aria-label="atomic symbol A r" class="bigfont2">A<span class="letter-tight">r</span></li>
              <li data-element="argon"><span class="bigfont1" aria-label="element">Argon</span></li>
              <li data-weight="39.948"><span class="bigfont1" aria-label="standard atomic weight 39 . 9 4 8">39.948</span></li>
-             <li data-groundstate="argon"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="argon"><span class="bigfont1" aria-label="ground [Ar]4s">[Ar]4s</span></li>
              <li data-ev="15.7596"><span class="bigfont1" aria-label="ionization energy 15 . 7 5 9 6">15.7596</span></li> 
           </ul>
       </td>
@@ -320,7 +319,7 @@
              <li data-symbol="ca" aria-label="atomic symbol C a" class="bigfont2">C<span class="letter-tight">a</span></li>
              <li data-element="calcium"><span class="bigfont1" aria-label="element">Calcium</span></li>
              <li data-weight="40.078"><span class="bigfont1" aria-label="standard atomic weight 40 . 0 7 8">40.078</span></li>
-             <li data-groundstate="calcium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="calcium"><span class="bigfont1" aria-label="ground [Ar]4s 2">[Ar]4s<sup>2</sup></span></li>
              <li data-ev="6.1132"><span class="bigfont1" aria-label="ionization energy 6 . 1 1 3 2">6.1132</span></li> 
           </ul>
       </td>
@@ -330,7 +329,7 @@
              <li data-symbol="sc" aria-label="atomic symbol S c" class="bigfont2">S<span class="letter-tight">c</span></li>
              <li data-element="scandium"><span class="bigfont1" aria-label="element">Scandium</span></li>
              <li data-weight="44.956"><span class="bigfont1" aria-label="standard atomic weight 44 . 9 5 6">44.956</span></li>
-             <li data-groundstate="scandium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="scandium"><span class="bigfont1" aria-label="ground [Ar]3d 4s 2">[Ar]3d4s<sup>2</sup></span></li>
              <li data-ev="6.5615"><span class="bigfont1" aria-label="ionization energy 6 . 5 6 1 5">6.5615</span></li> 
           </ul>
       </td>       
@@ -340,7 +339,7 @@
              <li data-symbol="ti" aria-label="atomic symbol T i" class="bigfont2">T<span class="letter-tight">i</span></li>
              <li data-element="titanium"><span class="bigfont1" aria-label="element">Titanium</span></li>
              <li data-weight="47.867"><span class="bigfont1" aria-label="standard atomic weight 47 . 8 6 7">47.867</span></li>
-             <li data-groundstate="titanium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="titanium"><span class="bigfont1" aria-label="ground [Ar]3d 2 4s 2">[Ar]3d<sup>2</sup>4s<sup>2</sup></span></li>
              <li data-ev="6.8281"><span class="bigfont1" aria-label="ionization energy 6 . 8 2 8 1">6.8281</span></li> 
           </ul>
       </td>
@@ -350,7 +349,7 @@
              <li data-symbol="v" aria-label="atomic symbol V" class="bigfont2">V<span class="letter-tight">&nbsp;</span></li>
              <li data-element="vanadium"><span class="bigfont1" aria-label="element">Vanadium</span></li>
              <li data-weight="50.942"><span class="bigfont1" aria-label="standard atomic weight 50 . 9 4 2">50.942</span></li>
-             <li data-groundstate="vanadium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="vanadium"><span class="bigfont1" aria-label="ground [Ar]3d 3 4s 2">[Ar]3d<sup>3</sup>4s<sup>2</sup></span></li>
              <li data-ev="6.7462"><span class="bigfont1" aria-label="ionization energy 6 . 7 4 6 2">6.7462</span></li> 
           </ul>
       </td>
@@ -360,7 +359,7 @@
              <li data-symbol="cr" aria-label="atomic symbol C r" class="bigfont2">C<span class="letter-tight">r</span></li>
              <li data-element="chromium"><span class="bigfont1" aria-label="element">Chromium</span></li>
              <li data-weight="51.996"><span class="bigfont1" aria-label="standard atomic weight 51 . 9 9 6">51.996</span></li>
-             <li data-groundstate="chromium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="chromium"><span class="bigfont1" aria-label="ground [Ar]3d 5 4s">[Ar]3d<sup>5</sup>4s</span></li>
              <li data-ev="6.7665"><span class="bigfont1" aria-label="ionization energy 6 . 7 6 6 5">6.7665</span></li> 
           </ul>
       </td>
@@ -370,8 +369,8 @@
              <li data-symbol="mn" aria-label="atomic symbol M n" class="bigfont2">M<span class="letter-tight">n</span></li>
              <li data-element="manganese"><span class="bigfont1" aria-label="element">Manganese</span></li>
              <li data-weight="54.938"><span class="bigfont1" aria-label="standard atomic weight 54 . 9 3 8">54.938</span></li>
-             <li data-groundstate="manganese"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
-             <li data-ev="7 . 4 3 4 0"><span class="bigfont1" aria-label="ionization energy 7 . 4 3 4 0">7 . 4 3 4 0</span></li> 
+             <li data-groundstate="manganese"><span class="bigfont1" aria-label="ground [Ar]3d 5 4s 2">[Ar]3d<sup>5</sup>4s<sup>2</sup></span></li>
+             <li data-ev="7 . 4 3 4 0"><span class="bigfont1" aria-label="ionization energy 7 . 4 3 4 0">7.4340</span></li> 
           </ul>
       </td>
          <td id="iron" class="solids" tabindex="0">
@@ -380,7 +379,7 @@
              <li data-symbol="fe" aria-label="atomic symbol F e" class="bigfont2">F<span class="letter-tight">e</span></li>
              <li data-element="iron"><span class="bigfont1" aria-label="element">Iron</span></li>
              <li data-weight="55.845"><span class="bigfont1" aria-label="standard atomic weight 55 . 8 4 5">55.845</span></li>
-             <li data-groundstate="iron"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="iron"><span class="bigfont1" aria-label="ground [Ar]3d64s2">[Ar]3d<sup>6</sup>4s<sup>2</sup></span></li>
              <li data-ev="7 . 9 0 2 5"><span class="bigfont1" aria-label="ionization energy 7 . 9 0 2 5">7.9025</span></li> 
           </ul>
       </td>
@@ -390,28 +389,28 @@
              <li data-symbol="co" aria-label="atomic symbol C o" class="bigfont2">C<span class="letter-tight">o</span></li>
              <li data-element="cobalt"><span class="bigfont1" aria-label="element">Cobalt</span></li>
              <li data-weight="58.933"><span class="bigfont1" aria-label="standard atomic weight 58 . 9 3 3">58.933</span></li>
-             <li data-groundstate="cobalt"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="cobalt"><span class="bigfont1" aria-label="ground [Ar]3d 7 4s 2">[Ar]3d<sup>7</sup>4s<sup>2</sup></span></li>
              <li data-ev="7.8810"><span class="bigfont1" aria-label="ionization energy 7 . 8 8 1 0">7.8810</span></li> 
           </ul>
       </td>
       <td id="nickel" class="solids" tabindex="0">
            <ul>
              <li data-atomicnumber="28"><span class="bigfont1" aria-label="atomic number 28">28</span></li>
-             <li data-symbol="cu" aria-label="atomic symbol N i" class="bigfont2">N<span class="letter-tight">i</span></li>
-             <li data-element="copper"><span class="bigfont1" aria-label="element">Copper</span></li>
-             <li data-weight="63.546"><span class="bigfont1" aria-label="standard atomic weight 63 . 5 4 6">63.546</span></li>
-             <li data-groundstate="copper"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
-             <li data-ev="7.7264"><span class="bigfont1" aria-label="ionization energy 7 . 7 2 6 4">7.7264</span></li> 
+             <li data-symbol="ni" aria-label="atomic symbol N i" class="bigfont2">N<span class="letter-tight">i</span></li>
+             <li data-element="nickel"><span class="bigfont1" aria-label="element">Nickel</span></li>
+             <li data-weight="58 . 6 9 3"><span class="bigfont1" aria-label="standard atomic weight 58 . 6 9 3">58.693</span></li>
+             <li data-groundstate="nickel"><span class="bigfont1" aria-label="ground Ar]3d 8 4s 2">Ar]3d<sup>8</sup>4s<sup>2</sup></span></li>
+             <li data-ev="7 . 6 3 9 9"><span class="bigfont1" aria-label="ionization energy 7 . 6 3 9 9">7.6399</span></li> 
           </ul>
       </td>
       <td id="copper" class="solids" tabindex="0">
             <ul>
              <li data-atomicnumber="29"><span class="bigfont1" aria-label="atomic number 29">29</span></li>
              <li data-symbol="ni" aria-label="atomic symbol C u" class="bigfont2">C<span class="letter-tight">u</span></li>
-             <li data-element="nickel"><span class="bigfont1" aria-label="element">Nickel</span></li>
-             <li data-weight="58.693"><span class="bigfont1" aria-label="standard atomic weight 58 . 6 9 3">58.693</span></li>
-             <li data-groundstate="nickel"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
-             <li data-ev="7.6399"><span class="bigfont1" aria-label="ionization energy 7 . 6 3 9 9">7.6399</span></li> 
+             <li data-element="copper"><span class="bigfont1" aria-label="element">Copper</span></li>
+             <li data-weight="63.546"><span class="bigfont1" aria-label="standard atomic weight 63 . 5 4 6">63.546</span></li>
+             <li data-groundstate="copper"><span class="bigfont1" aria-label="ground [Ar]3d 10 4s">[Ar]3d<sup>10</sup>4s</span></li>
+             <li data-ev="7.7264"><span class="bigfont1" aria-label="ionization energy 7 . 7 2 6 4">7.7264</span></li> 
           </ul>
       </td>
       <td id="zinc" class="solids" tabindex="0">
@@ -420,7 +419,7 @@
              <li data-symbol="zn" aria-label="atomic symbol Z n" class="bigfont2">Z<span class="letter-tight">n</span></li>
              <li data-element="zinc"><span class="bigfont1" aria-label="element">Zinc</span></li>
              <li data-weight="65.38"><span class="bigfont1" aria-label="standard atomic weight 65 . 3 8">65.38</span></li>
-             <li data-groundstate="zinc"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="zinc"><span class="bigfont1" aria-label="ground [Ar]3d 4p 104s2">[Ar]3d4p<sup>10</sup>4s<sup>2</sup></span></li>
              <li data-ev="9.3942"><span class="bigfont1" aria-label="ionization energy 9 . 3 9 4 2">9.3942</span></li> 
           </ul>
         </td>
@@ -430,7 +429,7 @@
              <li data-symbol="ga" aria-label="atomic symbol G a" class="bigfont2">G<span class="letter-tight">a</span></li>
              <li data-element="gallium"><span class="bigfont1" aria-label="element">Gallium</span></li>
              <li data-weight="69.723"><span class="bigfont1" aria-label="standard atomic weight 69 . 7 2 3">69.723</span></li>
-             <li data-groundstate="gallium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="gallium"><span class="bigfont1" aria-label="ground [Ar]3d 10 4s 2 4p">[Ar]3d<sup>10</sup>4s<sup>2</sup>4p</span></li>
              <li data-ev="5.9993"><span class="bigfont1" aria-label="ionization energy 5 . 9 9 9 3">5.9993</span></li> 
           </ul>
        </td>
@@ -440,7 +439,7 @@
              <li data-symbol="ge" aria-label="atomic symbol G e" class="bigfont2">G<span class="letter-tight">e</span></li>
              <li data-element="germanium"><span class="bigfont1" aria-label="element">Germanium</span></li>
              <li data-weight="72.630"><span class="bigfont1" aria-label="standard atomic weight 72 . 6 3 0">72.630</span></li>
-             <li data-groundstate="germanium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="germanium"><span class="bigfont1" aria-label="ground [Ar]3d 10 4s 2 4p 2">[Ar]3d<sup>10</sup>4s<sup>2</sup>4p<sup>2</sup></span></li>
              <li data-ev="7.8994"><span class="bigfont1" aria-label="ionization energy 7 . 8 9 9 4">7.8994</span></li> 
           </ul>
        </td>
@@ -450,7 +449,7 @@
              <li data-symbol="as" aria-label="atomic symbol A s" class="bigfont2">A<span class="letter-tight">s</span></li>
              <li data-element="arsenic"><span class="bigfont1" aria-label="element">Arsenic</span></li>
              <li data-weight="74.922"><span class="bigfont1" aria-label="standard atomic weight 74 . 9 2 2">74.922</span></li>
-             <li data-groundstate="arsenic"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="arsenic"><span class="bigfont1" aria-label="ground [Ar]3d 10 4s 2 4p 3">[Ar]3d<sup>10</sup>4s<sup>2</sup>4p<sup>3</sup></span></li>
              <li data-ev="9.7886"><span class="bigfont1" aria-label="ionization energy 9 . 7 8 8 6">9.7886</span></li> 
           </ul>
        </td>
@@ -460,7 +459,7 @@
              <li data-symbol="se" aria-label="atomic symbol S e" class="bigfont2">S<span class="letter-tight">e</span></li>
              <li data-element="selenium"><span class="bigfont1" aria-label="element">Selenium</span></li>
              <li data-weight="78.971"><span class="bigfont1" aria-label="standard atomic weight 78 . 9 7 1">78.971</span></li>
-             <li data-groundstate="selenium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="selenium"><span class="bigfont1" aria-label="ground [Ar]3d 10 4s 2 4p 4">[Ar]3d<sup>10</sup>4s<sup>2</sup>4p<sup>4</sup></span></li>
              <li data-ev="9.7524"><span class="bigfont1" aria-label="ionization energy 9 . 7 5 2 4">9.7524</span></li> 
           </ul>
        </td>
@@ -470,7 +469,7 @@
              <li data-symbol="br" aria-label="atomic symbol B r" class="bigfont2">B<span class="letter-tight">r</span></li>
              <li data-element="bromine"><span class="bigfont1" aria-label="element">Bromine</span></li>
              <li data-weight="79.904"><span class="bigfont1" aria-label="standard atomic weight 79 . 9 0 4">79.904</span></li>
-             <li data-groundstate="bromine"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="bromine"><span class="bigfont1" aria-label="ground [Ar]3d104s24p5">[Ar]3d<sup>10</sup>4s<sup>2</sup>4p<sup>5</sup></span></li>
              <li data-ev="11.8138"><span class="bigfont1" aria-label="ionization energy 11 . 8 1 3 8">11.8138</span></li> 
           </ul>
        </td>
@@ -492,7 +491,7 @@
              <li data-symbol="rb" aria-label="atomic symbol R b" class="bigfont2">R<span class="letter-tight">b</span></li>
              <li data-element="rubidium"><span class="bigfont1" aria-label="element">Rubidium</span></li>
              <li data-weight="85.468"><span class="bigfont1" aria-label="standard atomic weight 85.468">85.468</span></li>
-             <li data-groundstate="rubidium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="rubidium"><span class="bigfont1" aria-label="ground [Kr]5s">[Kr]5s</span></li>
              <li data-ev="4.1771"><span class="bigfont1" aria-label="ionization energy 4 . 1 7 7 1">4.1771</span></li> 
           </ul>
        </td>
@@ -502,7 +501,7 @@
              <li data-symbol="sr" aria-label="atomic symbol S r" class="bigfont2">S<span class="letter-tight">r</span></li>
              <li data-element="strontium"><span class="bigfont1" aria-label="element">Strontium</span></li>
              <li data-weight="87.62"><span class="bigfont1" aria-label="standard atomic weight 87 . 6 2 8">87.62</span></li>
-             <li data-groundstate="strontium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="strontium"><span class="bigfont1" aria-label="ground [Kr]5s2">[Kr]5s<sup>2</sup></span></li>
              <li data-ev="5.6949"><span class="bigfont1" aria-label="ionization energy 5 . 6 9 4 9">5.6949</span></li> 
           </ul>
        </td>
@@ -512,7 +511,7 @@
              <li data-symbol="y" aria-label="atomic symbol Y" class="bigfont2">Y<span class="letter-tight">&nbsp;</span></li>
              <li data-element="yttrium"><span class="bigfont1" aria-label="element">Yttrium</span></li>
              <li data-weight="88.906"><span class="bigfont1" aria-label="standard atomic weight 88 . 9 0 6">88.906</span></li>
-             <li data-groundstate="yttrium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="yttrium"><span class="bigfont1" aria-label="ground [Kr]4d5s2">[Kr]4d5s<sup>2</sup></span></li>
              <li data-ev="6.2173"><span class="bigfont1" aria-label="ionization energy 6 . 2 1 7 3">6.2173</span></li> 
           </ul>
        </td>
@@ -522,7 +521,7 @@
              <li data-symbol="zr" aria-label="atomic symbol Z r" class="bigfont2">Z<span class="letter-tight">r</span></li>
              <li data-element="zirconium"><span class="bigfont1" aria-label="element">Zirconium</span></li>
              <li data-weight="91.224"><span class="bigfont1" aria-label="standard atomic weight 91 . 2 2 4">91.224</span></li>
-             <li data-groundstate="zirconium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="zirconium"><span class="bigfont1" aria-label="ground [Kr]4d25s2">[Kr]4d<sup>2</sup>5s<sup>2</sup></span></li>
              <li data-ev="6.6341"><span class="bigfont1" aria-label="ionization energy 6 . 6 3 4 1">6.6341</span></li> 
           </ul>
        </td>
@@ -532,7 +531,7 @@
              <li data-symbol="N b" aria-label="atomic symbol N b" class="bigfont2">N<span class="letter-tight">b</span></li>
              <li data-element="niobium"><span class="bigfont1" aria-label="element">Niobium</span></li>
              <li data-weight="92.906"><span class="bigfont1" aria-label="standard atomic weight 92 . 9 0 6">92.906</span></li>
-             <li data-groundstate="niobium"><span class="bigfont1" aria-label="ground TBD">TBD</span></li>
+             <li data-groundstate="niobium"><span class="bigfont1" aria-label="ground [Kr]4d 4 5s">[Kr]4d<sup>4</sup>5s</span></li>
              <li data-ev="6.7589"><span class="bigfont1" aria-label="ionization energy 6 . 7 5 8 9">6.7589</span></li> 
           </ul>
        </td>
@@ -1332,12 +1331,16 @@
  <footer>
   <div class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
-        Content: 29 January 2020<br />
-        WebAim: 27 January 2020 0<br />
+        Content: 11 February 2020<br />
+        WebAim: 6 February 2020 0<br />
         NuHTML: 27 January 2020 multiple aria-label warnings (expected, in this case)<br />
+        Note: Speech Synthesis referenced in builing this page https://www.w3.org/TR/speech-synthesis11/#S1.1<br />
+        Note: Pronunciation referenced in builing this page SSML wiki at https://github.com/w3c/pronunciation/wiki<br />
+        Note: aural has been scrapped See https://www.w3.org/TR/css3-speech/ <br />
         Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
         Note:aria-live role="region" added 3 Jan 2020 to display box for elements<br />
         ToDo: Fix CU and Ni (28 and 29)<br />
+        ToDo: remove TBD from shell configurationss<br />
         ToDo: Create button for only Atomic # and Atomic Weight<br />
         ToDo: Set up search for two-letter Atomic Symbol<br />
         ToDo: Bring down headers into cells<br />
@@ -1350,7 +1353,7 @@ var letters = document.getElementById("search_field_input").value;
 var letter = letters.toUpperCase();
 var text;
 
-   // If the letter is "c"
+   // If the letter is "hydrogen"
    if (letter === "HYDROGEN") {
      text = "<br/>"
         + "<br/>"
@@ -1362,17 +1365,64 @@ var text;
         + "Ground State Configuration: 1s"  + "<br/>"
         + "Ionization Energy: 13.5984"  + "<br/>"
         + "<br/>";
- // If the letter is "b" or "d"
+ // If the letter is "helium"
    } else if (letter === "HELIUM") {
         text = "<br/>"
         + "<br/>"
         + "<strong>" + "Helium" + "</strong>"
         + "<br/>" 
         + "Ground State: 1s<sup>2</sup>" + "<br/>"
-        + "Atomic Number: 1"  + "<br/>"
-        + "Standard Atomic Weight: 1.008"  + "<br/>"
-        + "Ground State Configuration: 1s"  + "<br/>"
-        + "Ionization Energy: 13.5984"  + "<br/>"
+        + "Atomic Number: 2"  + "<br/>"
+        + "Standard Atomic Weight: 4.0026"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>"  + "<br/>"
+        + "Ionization Energy: 24.5874"  + "<br/>"
+        + "<br/>";
+    // If the letter is "lithium"
+   } else if (letter === "LITHIUM") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Lithium" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>" + "<br/>"
+        + "Atomic Number: 3"  + "<br/>"
+        + "Standard Atomic Weight:  6.94"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup> 2s"  + "<br/>"
+        + "Ionization Energy: 5.3917"  + "<br/>"
+        + "<br/>";
+       // If the letter is "Beryllium"
+   } else if (letter === "BERYLLIUM") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Beryllium" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
+        + "Atomic Number: 4"  + "<br/>"
+        + "Standard Atomic Weight: 9.0122"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup> 2s"  + "<br/>"
+        + "Ionization Energy: 9.32277"  + "<br/>"
+        + "<br/>";
+       // If the letter is "Boron"
+   } else if (letter === "BORON") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Boron" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
+        + "Atomic Number: 5"  + "<br/>"
+        + "Standard Atomic Weight:  10.81"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p"  + "<br/>"
+        + "Ionization Energy: 8.2980"  + "<br/>"
+        + "<br/>";
+   } else if (letter === "CARBON") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Carbon" + "</strong>"
+        + "<br/>" 
+        + "Ground State: 1s<sup>2</sup>  2s<sup>2</sup>" + "<br/>"
+        + "Atomic Number: 6"  + "<br/>"
+        + "Standard Atomic Weight:  10.81"  + "<br/>"
+        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>2</sup>"  + "<br/>"
+        + "Ionization Energy: 11.2603"  + "<br/>"
         + "<br/>";
 
    // If the letter is anything else

@@ -1331,7 +1331,7 @@
  <footer>
   <div class="left100">
      <p tabindex="0">This page last modified or reviewed</p>
-        Content: 11 February 2020<br />
+        Content: 19 February 2020<br />
         WebAim: 6 February 2020 0<br />
         NuHTML: 27 January 2020 multiple aria-label warnings (expected, in this case)<br />
         Note: Speech Synthesis referenced in builing this page https://www.w3.org/TR/speech-synthesis11/#S1.1<br />
@@ -1339,8 +1339,6 @@
         Note: aural has been scrapped See https://www.w3.org/TR/css3-speech/ <br />
         Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
         Note:aria-live role="region" added 3 Jan 2020 to display box for elements<br />
-        ToDo: Fix CU and Ni (28 and 29)<br />
-        ToDo: remove TBD from shell configurationss<br />
         ToDo: Create button for only Atomic # and Atomic Weight<br />
         ToDo: Set up search for two-letter Atomic Symbol<br />
         ToDo: Bring down headers into cells<br />
@@ -1458,16 +1456,56 @@ var text;
         + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>"  + "<br/>"
         + "Ionization Energy: 21.5645"  + "<br/>"
         + "<br/>";
-      } else if (letter === "N.....") {
+      } else if (letter === "SODIUM") {
         text = "<br/>"
         + "<br/>"
         + "<strong>" + "Neon" + "</strong>"
         + "<br/>" 
-        + "Atomic Number: 10"  + "<br/>"
-        + "Standard Atomic Weight: 20.180"  + "<br/>"
-        + "Ground State Configuration: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>"  + "<br/>"
-        + "Ionization Energy: 17.4228"  + "<br/>"
-        + "<br/>";      
+        + "Atomic Number: 11"  + "<br/>"
+        + "Standard Atomic Weight: 22.990"  + "<br/>"
+        + "Ground State Configuration: [Ne]3s"  + "<br/>"
+        + "Ionization Energy: 5.1391"  + "<br/>"
+        + "<br/>"; 
+      } else if (letter === "MAGNESIUM") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Magnesium" + "</strong>"
+        + "<br/>" 
+        + "Atomic Number: 12"  + "<br/>"
+        + "Standard Atomic Weight: 24.305"  + "<br/>"
+        + "Ground State Configuration: [Ne]3s<sup>2</sup>"  + "<br/>"
+        + "Ionization Energy: 7.6462"  + "<br/>"
+        + "<br/>"; 
+       } else if (letter === "ALUMINUM") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Aluminum" + "</strong>"
+        + "<br/>" 
+        + "Atomic Number: 13"  + "<br/>"
+        + "Standard Atomic Weight: 26.982"  + "<br/>"
+        + "Ground State Configuration: [Ne]3s<sup>2</sup>3p"  + "<br/>"
+        + "Ionization Energy: 5.9858"  + "<br/>"
+        + "<br/>"; 
+      } else if (letter === "SILICON") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Silicon" + "</strong>"
+        + "<br/>" 
+        + "Atomic Number: 14"  + "<br/>"
+        + "Standard Atomic Weight:  28.085"  + "<br/>"
+        + "Ground State Configuration: [Ne]3s<sup>2</sup>3p<sup>2</sup>"  + "<br/>"
+        + "Ionization Energy: 8.1517"  + "<br/>"
+        + "<br/>";
+      } else if (letter === "PHOSPHORUS") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Phosphorus" + "</strong>"
+        + "<br/>" 
+        + "Atomic Number: 15"  + "<br/>"
+        + "Standard Atomic Weight: 30.974"  + "<br/>"
+        + "Ground State Configuration: [Ne]3s<sup>2</sup>3p<sup>3</sup>"  + "<br/>"
+        + "Ionization Energy: 10.4867"  + "<br/>"
+        + "<br/>";   
         
    // If the letter is anything else
       

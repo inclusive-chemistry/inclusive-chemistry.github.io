@@ -1340,7 +1340,6 @@
         Note:aria-label used to over-ride screen reader mispronunciations of atomic weights<br />
         Note:aria-live role="region" added 3 Jan 2020 to display box for elements<br />
         ToDo: Create button for only Atomic # and Atomic Weight<br />
-        ToDo: Add dynamic output two-letter Atomic Symbol<br />
         ToDo: Set up search for two-letter Atomic Symbol<br />
         ToDo: Bring down headers into cells<br />
   </div>
@@ -1355,9 +1354,9 @@ var text;
    // If the letter is "hydrogen"
    if (letter === "HYDROGEN") {
      text = "<br/>"
+        + "<br/>"
         + "<strong>" + "Hydrogen" + "</strong>"
         + "<br/>" 
-        + "<br/>"
         + "Atomic Symbol:" + "<strong>" + "H" + "</strong>"
         + "<br/>"
         + "Atomic Number: 1"  + "<br/>"
@@ -1379,7 +1378,7 @@ var text;
         + "Ground State Configuration: 1s<sup>2</sup>"  + "<br/>"
         + "Ionization Energy: 24.5874"  + "<br/>"
         + "<br/>"
-        + "<a href='/audio/hydrogen--_us_1.mp3'>link to pronunciation</a>";
+        + "<a href='/audio/helium--_us_1.mp3'>link to pronunciation</a>";
     // If the letter is "lithium"
    } else if (letter === "LITHIUM") {
         text = "<br/>"
@@ -1393,7 +1392,7 @@ var text;
         + "Ground State Configuration: 1s<sup>2</sup> 2s"  + "<br/>"
         + "Ionization Energy: 5.3917"  + "<br/>"
         + "<br/>"
-        + "<a href='/audio/hydrogen--_us_1.mp3'>link to pronunciation</a>";
+        + "<a href='/audio/lithium--_us_1.mp3'>link to pronunciation</a>";
        // If the letter is "Beryllium"
    } else if (letter === "BERYLLIUM") {
         text = "<br/>"
@@ -1578,20 +1577,33 @@ var text;
         + "Ionization Energy: 12.9676"  + "<br/>"
         + "<br/>"
         + "<a href='/audio/hydrogen--_us_1.mp3'>link to pronunciation</a>";       
-     } else if (letter === "Next") {
+     } else if (letter === "ARGON") {
         text = "<br/>"
         + "<br/>"
         + "<strong>" + "Argon" + "</strong>"
         + "<br/>"
         + "Atomic Symbol:" + "<strong>" + "Ar" + "</strong>"
         + "<br/>"
-        + "Atomic Number: 17"  + "<br/>"
+        + "Atomic Number: 18"  + "<br/>"
         + "Standard Atomic Weight: 39.948"  + "<br/>"
-        + "Ground State Configuration: [Ne]3s<sup>2</sup>3p<sup>5</sup>"  + "<br/>"
-        + "Ionization Energy: 12.9676"  + "<br/>"
+        + "Ground State Configuration: [Ne]3s<sup>2</sup>3p<sup>6</sup>"  + "<br/>"
+        + "Ionization Energy: 15.7596"  + "<br/>"
         + "<br/>"
         + "<a href='/audio/hydrogen--_us_1.mp3'>link to pronunciation</a>";
-        
+     } else if (letter === "POTASSIUM") {
+        text = "<br/>"
+        + "<br/>"
+        + "<strong>" + "Potassium" + "</strong>"
+        + "<br/>"
+        + "Atomic Symbol:" + "<strong>" + "K" + "</strong>"
+        + "<br/>"
+        + "Atomic Number: 19"  + "<br/>"
+        + "Standard Atomic Weight: 39.098"  + "<br/>"
+        + "Ground State Configuration: [Ne]3s"  + "<br/>"
+        + "Ionization Energy: 5.1391"  + "<br/>"
+        + "<br/>"
+        + "<a href='/audio/hydrogen--_us_1.mp3'>link to pronunciation</a>";
+           
    // If the letter is anything else     
    // If the letter is "b" or "d"
    } else if (letters === "b" || letters === "d") {
